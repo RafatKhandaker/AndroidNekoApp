@@ -8,8 +8,13 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 
-/** PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN
- * SQL DATABASE WITH RECYCLER **/
+/***   PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
+ **                                SQL DATABASE WITH RECYCLER                                     **
+ **-----------------------------------------------------------------------------------------------**
+ *                                                 Created by : Mina Meltem & Rafat Khandaker
+ *                                                                started:           12-06-16
+ *                                                                Version:                1.0
+ *                                                               Last Modified:      12-06-16    **/
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initiateGridView();
+
+    }
+
+//--------------------------------- Initiate GridView-----------------------------------------------
+
+    public void initiateGridView(){
         GridView gridView = (GridView) findViewById(R.id.gridview);
         gridView.setAdapter(new GridAdapter(this));
 
@@ -28,7 +40,5 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
 
 }
