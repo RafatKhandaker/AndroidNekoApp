@@ -2,8 +2,10 @@ package com.blackjacksmart.reddragon.androidnekoapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.GridView;
+import android.widget.Toast;
 
 
 /** PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN
@@ -11,22 +13,22 @@ import android.support.v7.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
 
-    RecyclerView recyclerView;
-    GridLayoutManager gridLayoutManager;
-    RecyclerView.Adapter adapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        initiateRecyclerView();
+
+        GridView gridView = (GridView) findViewById(R.id.gridview);
+        gridView.setAdapter(new GridAdapter(this));
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(MainActivity.this, "" + (i+1), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
-    public void initiateRecyclerView(){
-//        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-//        gridLayoutManager = new GridLayoutManager(this);
-//        adapter = new RecyclerAdapter();
-//        recyclerView.setLayoutManager();
-//        recyclerView.setAdapter(adapter);
-    }
+
+
 }
