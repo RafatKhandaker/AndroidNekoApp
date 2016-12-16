@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="6db432ed02467473f3573ca45288f0b66f823f58">
+        sha1="6b29d8d0fefbad4736f0e6c3249a5266826b6add">
         <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_926c3d637d087db92679986d52f4627c8e95c08e/classes.dex" />
     </item>
     <item
@@ -138,6 +138,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/RedDragon/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.4.0/ea392375cf9ff59234a82e7928a204215ccc98cd/butterknife-annotations-8.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
+        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_62f73414b72e65c1570da28745d82eb09590b1c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -151,8 +160,17 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="22917d5cb58bab28e1142bcd348c43023ff20235">
+        sha1="c87a2498bdc7f814e9ce160d78aff9c9a5f8dbc3">
         <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e6e9a137713cecc44de87117f502db59eadfa58e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_c6ec3a9eb2be1b503319d2020dc6c10b17e9550f/classes.dex" />
     </item>
     <item
         is-multidex="true"
