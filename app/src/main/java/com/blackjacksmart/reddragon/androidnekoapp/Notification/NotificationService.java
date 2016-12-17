@@ -11,6 +11,8 @@ import android.support.v4.app.NotificationCompat;
 import com.blackjacksmart.reddragon.androidnekoapp.Fragment.NotificationTriggerActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_LOOP;
+
 /**
  * Created by RedDragon on 12/13/16.
  *
@@ -38,6 +40,9 @@ public class NotificationService extends IntentService {
 //------------------------------NOTIFICATION METHOD-------------------------------------------------
 
     public void initiateNotificationService(Intent intent){
+
+        GRID_LOOP = true;
+
         int NOTIFICATION_ID = 555;
 
         intent = new Intent(this, NotificationTriggerActivity.class);

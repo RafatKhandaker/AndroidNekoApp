@@ -6,8 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.FRAGMENT_VALUE;
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.NOTIFICATION_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.unlockRandomCharacter;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.setPositionClicked;
@@ -24,10 +22,10 @@ public class NotificationTriggerActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
-        FRAGMENT_VALUE = NOTIFICATION_TRIGGER;
-        System.out.println("Notification trigger " +FRAGMENT_VALUE);
+
         unlockCharacter();
         launchNewCharacterFrag();
+
     }
 
 

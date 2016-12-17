@@ -5,6 +5,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,6 +16,9 @@ import com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller;
 import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.Notification.NotificationReceiver;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.checkCharacterUnlocked;
@@ -32,12 +36,16 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int positionClicked;
+@Nullable @BindView (R.id.gridview) GridView gridView;
+
+private static int positionClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
 //       if(savedInstanceState.equals(null)) {
         RANDOM_LIST = generateRandomNumList();
 
@@ -47,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         initiateNotificationTimer();
         initiateGridView();
 
-
     }
 //-----------------------------------Retrieve/Set Variable----------------------------------------------
     public static int getPositionClicked(){ return positionClicked; }
@@ -55,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
 //--------------------------------- Initiate GridView-----------------------------------------------
 
     public void initiateGridView(){
-        GridView gridView = (GridView) findViewById(R.id.gridview);
         gridView.setAdapter(new GridAdapter(this));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){

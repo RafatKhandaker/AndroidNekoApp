@@ -14,6 +14,8 @@ import java.util.Collections;
 
 public class Controller {
 
+    public static boolean GRID_LOOP = false;
+
     private static int checkVal;
     public static ArrayList<Integer> RANDOM_LIST = new ArrayList<Integer>(28);
 
@@ -21,34 +23,34 @@ public class Controller {
     public static final int GRID_TRIGGER = 1;
     public static final int NOTIFICATION_TRIGGER = 0;
 
-    public final static boolean BEAST = false;
-    public final static boolean BLACK_PANTHER = false;
-    public final static boolean CAPTAIN_AMERICA = false;
-    public final static boolean CAPTAIN_MARVEL = false;
-    public final static boolean CARNAGE = false;
-    public final static boolean CYCLOPS = false;
-    public final static boolean DEADPOOL = false;
-    public final static boolean GAMBIT = false;
-    public final static boolean HULK = false;
-    public final static boolean HUMAN_TORCH = false;
-    public final static boolean ICE_MAN = false;
-    public final static boolean IRON_MAN = false;
-    public final static boolean JEAN_GREY = false;
-    public final static boolean JUBILEE = false;
-    public final static boolean SHADOW_CAT = false;
-    public final static boolean MYSTIQUE = false;
-    public final static boolean NIGHT_CRAWLER = false;
-    public final static boolean XAVIER = false;
-    public final static boolean PSYLOCKE = false;
-    public final static boolean ROGUE = false;
-    public final static boolean SILVER_SURFER = false;
-    public final static boolean SPIDER_MAN = false;
-    public final static boolean STEEL = false;
-    public final static boolean STORM = false;
-    public final static boolean THOR = false;
-    public final static boolean VENOM = false;
-    public final static boolean WAR_MACHINE = false;
-    public final static boolean WOLVERINE = false;
+    public static boolean BEAST = false;
+    public static boolean BLACK_PANTHER = false;
+    public static boolean CAPTAIN_AMERICA = false;
+    public static boolean CAPTAIN_MARVEL = false;
+    public static boolean CARNAGE = false;
+    public static boolean CYCLOPS = false;
+    public static boolean DEADPOOL = false;
+    public static boolean GAMBIT = false;
+    public static boolean HULK = false;
+    public static boolean HUMAN_TORCH = false;
+    public static boolean ICE_MAN = false;
+    public static boolean IRON_MAN = false;
+    public static boolean JEAN_GREY = false;
+    public static boolean JUBILEE = false;
+    public static boolean SHADOW_CAT = false;
+    public static boolean MYSTIQUE = false;
+    public static boolean NIGHT_CRAWLER = false;
+    public static boolean XAVIER = false;
+    public static boolean PSYLOCKE = false;
+    public static boolean ROGUE = false;
+    public static boolean SILVER_SURFER = false;
+    public static boolean SPIDER_MAN = false;
+    public static boolean STEEL = false;
+    public static boolean STORM = false;
+    public static boolean THOR = false;
+    public static boolean VENOM = false;
+    public static boolean WAR_MACHINE = false;
+    public static boolean WOLVERINE = false;
 
     public static Boolean[] checkCharacterUnlocked = {
             BEAST, BLACK_PANTHER, CAPTAIN_AMERICA, CAPTAIN_MARVEL,

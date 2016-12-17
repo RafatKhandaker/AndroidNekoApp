@@ -20,6 +20,9 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 
 public class GridAdapter extends BaseAdapter {
 
+    private ImageView icon;
+    private TextView iconText;
+
     private Context mContext;
     private LayoutInflater inflater;
 
@@ -51,8 +54,8 @@ public class GridAdapter extends BaseAdapter {
             gridView = inflater.inflate(R.layout.custom_layout, null);
         }
 
-        ImageView icon = (ImageView) gridView.findViewById(R.id.image_view);
-        TextView iconText = (TextView) gridView.findViewById(R.id.text_view);
+         icon = (ImageView) gridView.findViewById(R.id.image_view);
+         iconText = (TextView) gridView.findViewById(R.id.text_view);
 
         if(isCharacterUnlocked(i)) {
             icon.setImageResource(icons[i]);

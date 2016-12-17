@@ -156,6 +156,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/RedDragon/.gradle/caches/modules-2/files-2.1/nl.qbusict/cupboard/2.1.4/ba5bc66fad1fc20aeb8a74f0013b04185fd9a3a9/cupboard-2.1.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ba5bc66fad1fc20aeb8a74f0013b04185fd9a3a9">
+        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/cupboard-2.1.4_1e2906777258800b00ad8097afc633915e8396ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
