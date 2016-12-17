@@ -13,6 +13,7 @@ import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 /**
  * Created by RedDragon on 12/13/16.
+ *
  */
 
 public class NotificationService extends IntentService {
@@ -29,10 +30,16 @@ public class NotificationService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
 
+        initiateNotificationService(intent);
+
+
+    }
+
+    public void initiateNotificationService(Intent intent){
         int NOTIFICATION_ID = 555;
 
 // Define an intent to trigger when notification is selected (in this case to open an activity)
-         intent = new Intent(this, FragmentActivity.class);
+        intent = new Intent(this, FragmentActivity.class);
 
 // Turn this into a PendingIntent
         int requestID = (int) System.currentTimeMillis(); // Unique requestID to differentiate between various notification with same notification ID
@@ -53,7 +60,6 @@ public class NotificationService extends IntentService {
 
 // Setting a notification ID allows you to update the notification later on.
         notificationManager.notify(NOTIFICATION_ID, notification);
-
     }
 
 }

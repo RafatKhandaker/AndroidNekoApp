@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller;
 import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
@@ -16,6 +17,7 @@ import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.Notification.NotificationReceiver;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.generateRandomNumList;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.isCharacterUnlocked;
 
 /**##############################################################################################**/
 /***   PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
@@ -29,7 +31,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 
 public class MainActivity extends AppCompatActivity {
 
-    public static int getPositionClicked;
+    private static int positionClicked;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+//-----------------------------------Retrieve Variable----------------------------------------------
+    public static int getPositionClicked(){ return positionClicked; }
 
 //--------------------------------- Initiate GridView-----------------------------------------------
 
@@ -52,10 +56,13 @@ public class MainActivity extends AppCompatActivity {
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                getPositionClicked = (i);
+                positionClicked = (i);
 
-                Controller.toastCharacter(MainActivity.this, getPositionClicked);
-                launchFragmentActivity(view.getContext());
+                if(isCharacterUnlocked[i]){
+                    Controller.toastCharacter(MainActivity.this, positionClicked);
+                    launchFragmentActivity(view.getContext()); }
+                else{ Toast.makeText(view.getContext(), "LOCKED", Toast.LENGTH_SHORT).show(); }
+
             }
         });
     }
@@ -80,7 +87,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-//------------------------------------Retrofit------------------------------------------------------
 
 }

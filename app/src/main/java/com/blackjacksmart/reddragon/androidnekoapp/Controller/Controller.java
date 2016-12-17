@@ -45,7 +45,7 @@ public class Controller {
     public final static boolean WAR_MACHINE = false;
     public final static boolean WOLVERINE = false;
 
-    public static Boolean[] isCharacterLocked = {
+    public static Boolean[] isCharacterUnlocked = {
             BEAST, BLACK_PANTHER, CAPTAIN_AMERICA, CAPTAIN_MARVEL,
             CARNAGE, CYCLOPS, DEADPOOL, GAMBIT, HULK, HUMAN_TORCH,
             ICE_MAN, IRON_MAN, JEAN_GREY, JUBILEE, SHADOW_CAT, MYSTIQUE,
@@ -77,6 +77,23 @@ public class Controller {
             R.drawable.wolverine_icon
     };
 
+    public static final Integer[] charBackgroundImage = {
+            R.drawable.beast_background, R.drawable.black_panther_background,
+            R.drawable.captain_background, R.drawable.captain_marvel_background,
+            R.drawable.carnage_background, R.drawable.cyclops_background,
+            R.drawable.deadpool_background, R.drawable.gambit_background,
+            R.drawable.hulk_background, R.drawable.human_torch_background,
+            R.drawable.ice_man_background, R.drawable.jean_grey_background,
+            R.drawable.jubilee_background, R.drawable.kitty_background,
+            R.drawable.mystique_background, R.drawable.nightcrawler_background,
+            R.drawable.professor_x_background, R.drawable.psylocke_background,
+            R.drawable.rogue_background, R.drawable.silver_surfer_background,
+            R.drawable.spidey_background, R.drawable.steel_background,
+            R.drawable.storm_background, R.drawable.thor_background,
+            R.drawable.venom_background, R.drawable.war_machine_background,
+            R.drawable.wolverine_background
+    };
+
 
     public static ArrayList<Integer> generateRandomNumList(){
         for(int i = 0; i < 28; i++){
@@ -92,7 +109,7 @@ public class Controller {
     private static boolean setTrue(Boolean character){return character = true;}
 
     public static boolean setCharacterIcon(int i){
-        return isCharacterLocked[i];
+        return isCharacterUnlocked[i];
     }
 
     public static void unlockRandomCharacter(int checkValue){

@@ -12,7 +12,7 @@ import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.ARRAY_CHARACTERS;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.isCharacterLocked;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.isCharacterUnlocked;
 
 /**
  * Created by RedDragon on 12/6/16.
@@ -54,7 +54,7 @@ public class GridAdapter extends BaseAdapter {
         ImageView icon = (ImageView) gridView.findViewById(R.id.image_view);
         TextView iconText = (TextView) gridView.findViewById(R.id.text_view);
 
-        if(isCharacterLocked[i]) {
+        if(isCharacterUnlocked[i]) {
             icon.setImageResource(icons[i]);
             iconText.setText(ARRAY_CHARACTERS[i]);
         }
