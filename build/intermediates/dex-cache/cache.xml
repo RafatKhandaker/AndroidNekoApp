@@ -106,7 +106,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="acc2a804c762fd092efa74b3a704c9950dedf5df">
+        sha1="3608ed5e47d033609b9f3d59759a96c52e4fd826">
         <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/AndroidNekoApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_926c3d637d087db92679986d52f4627c8e95c08e/classes.dex" />
     </item>
     <item

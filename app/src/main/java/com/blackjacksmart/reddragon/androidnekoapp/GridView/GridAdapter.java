@@ -54,7 +54,7 @@ public class GridAdapter extends BaseAdapter {
         ImageView icon = (ImageView) gridView.findViewById(R.id.image_view);
         TextView iconText = (TextView) gridView.findViewById(R.id.text_view);
 
-        if(isCharacterUnlocked[i]) {
+        if(isCharacterUnlocked(i)) {
             icon.setImageResource(icons[i]);
             iconText.setText(ARRAY_CHARACTERS[i]);
         }

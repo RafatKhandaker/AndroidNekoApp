@@ -16,6 +16,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.ARRAY_CHARACTERS;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.FRAGMENT_VALUE;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_TRIGGER;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.NOTIFICATION_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.charBackgroundImage;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
@@ -25,23 +28,36 @@ import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositi
 
 public class CharacterFragment extends Fragment {
 
-@BindView(R.id.collapsing_toolbar) CollapsingToolbarLayout collapsingToolbar;
-@BindView(R.id.appbar) AppBarLayout appBarLayout;
+@Nullable @BindView(R.id.collapsing_toolbar) CollapsingToolbarLayout collapsingToolbar;
+@Nullable @BindView(R.id.appbar) AppBarLayout appBarLayout;
 @Nullable @BindView (R.id.char_header_image_view) ImageView charHeaderImage;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View characterViewFragment = inflater.inflate(
-                R.layout.char_description_fragment, container, false);
+        View characterViewFragment = null;
 
-        ButterKnife.bind(this,characterViewFragment);
+        switch(FRAGMENT_VALUE){
+            case GRID_TRIGGER:
+                 characterViewFragment = inflater.inflate(
+                        R.layout.char_description_fragment, container, false);
 
-        initCollapsingToolbar();
+                ButterKnife.bind(this,characterViewFragment);
+                initCollapsingToolbar();
+                break;
+            case NOTIFICATION_TRIGGER:
+                 characterViewFragment = inflater.inflate(
+                        R.layout.char_description_fragment, container, false);
+
+                ButterKnife.bind(this,characterViewFragment);
+                initCollapsingToolbar();
+                break;
+        }
+
         return characterViewFragment;
     }
 
-    private void loadFragmentView(int i){
+    private void loadFragmentView(){
         initCollapsingToolbar();
         charHeaderImage.setImageResource(charBackgroundImage[getPositionClicked()]);
 

@@ -16,8 +16,9 @@ import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.Notification.NotificationReceiver;
 
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.checkCharacterUnlocked;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.generateRandomNumList;
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.isCharacterUnlocked;
 
 /**##############################################################################################**/
 /***   PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
@@ -37,16 +38,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//       if(savedInstanceState.equals(null)) {
+        RANDOM_LIST = generateRandomNumList();
 
-        generateRandomNumList();
+//       }
+
+        System.out.println(RANDOM_LIST);
         initiateNotificationTimer();
         initiateGridView();
 
 
     }
-//-----------------------------------Retrieve Variable----------------------------------------------
+//-----------------------------------Retrieve/Set Variable----------------------------------------------
     public static int getPositionClicked(){ return positionClicked; }
-
+    public static void setPositionClicked(int i){  positionClicked = i; }
 //--------------------------------- Initiate GridView-----------------------------------------------
 
     public void initiateGridView(){
@@ -58,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 positionClicked = (i);
 
-                if(isCharacterUnlocked[i]){
+                if(checkCharacterUnlocked[i]){
                     Controller.toastCharacter(MainActivity.this, positionClicked);
                     launchFragmentActivity(view.getContext()); }
                 else{ Toast.makeText(view.getContext(), "LOCKED", Toast.LENGTH_SHORT).show(); }

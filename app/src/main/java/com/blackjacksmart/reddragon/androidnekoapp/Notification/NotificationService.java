@@ -8,7 +8,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 
-import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
+import com.blackjacksmart.reddragon.androidnekoapp.Fragment.NotificationTriggerActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 /**
@@ -40,7 +40,7 @@ public class NotificationService extends IntentService {
     public void initiateNotificationService(Intent intent){
         int NOTIFICATION_ID = 555;
 
-        intent = new Intent(this, FragmentActivity.class);
+        intent = new Intent(this, NotificationTriggerActivity.class);
 
         int requestID = (int) System.currentTimeMillis();
         int flags = PendingIntent.FLAG_CANCEL_CURRENT;

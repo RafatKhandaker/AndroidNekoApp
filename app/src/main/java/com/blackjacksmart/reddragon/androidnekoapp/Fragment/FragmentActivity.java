@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.FRAGMENT_VALUE;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_TRIGGER;
+
 /**
  * Created by RedDragon on 12/15/16.
  */
@@ -17,6 +20,7 @@ public class FragmentActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
 
+        FRAGMENT_VALUE = GRID_TRIGGER;
         launchCharacterFragment();
     }
 

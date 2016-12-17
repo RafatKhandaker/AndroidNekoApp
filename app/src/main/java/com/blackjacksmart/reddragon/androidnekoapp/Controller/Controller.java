@@ -6,6 +6,7 @@ import android.widget.Toast;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by RedDragon on 12/16/16.
@@ -14,7 +15,11 @@ import java.util.ArrayList;
 public class Controller {
 
     private static int checkVal;
-    private static ArrayList<Integer> list = new ArrayList<Integer>(28);
+    public static ArrayList<Integer> RANDOM_LIST = new ArrayList<Integer>(28);
+
+    public static int FRAGMENT_VALUE;
+    public static final int GRID_TRIGGER = 1;
+    public static final int NOTIFICATION_TRIGGER = 0;
 
     public final static boolean BEAST = false;
     public final static boolean BLACK_PANTHER = false;
@@ -45,7 +50,7 @@ public class Controller {
     public final static boolean WAR_MACHINE = false;
     public final static boolean WOLVERINE = false;
 
-    public static Boolean[] isCharacterUnlocked = {
+    public static Boolean[] checkCharacterUnlocked = {
             BEAST, BLACK_PANTHER, CAPTAIN_AMERICA, CAPTAIN_MARVEL,
             CARNAGE, CYCLOPS, DEADPOOL, GAMBIT, HULK, HUMAN_TORCH,
             ICE_MAN, IRON_MAN, JEAN_GREY, JUBILEE, SHADOW_CAT, MYSTIQUE,
@@ -96,10 +101,12 @@ public class Controller {
 
 
     public static ArrayList<Integer> generateRandomNumList(){
+        ArrayList <Integer> randomList = new ArrayList<>();
         for(int i = 0; i < 28; i++){
-            list.add(i);
+            randomList.add(i);
         }
-        return list;
+        Collections.shuffle(randomList);
+        return randomList;
     }
 
     public static void toastCharacter(Context context, int n){
@@ -108,8 +115,8 @@ public class Controller {
 
     private static boolean setTrue(Boolean character){return character = true;}
 
-    public static boolean setCharacterIcon(int i){
-        return isCharacterUnlocked[i];
+    public static boolean isCharacterUnlocked(int i){
+        return checkCharacterUnlocked[i];
     }
 
     public static void unlockRandomCharacter(int checkValue){

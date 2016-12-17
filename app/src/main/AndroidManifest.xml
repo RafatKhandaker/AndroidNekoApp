@@ -21,6 +21,7 @@
         </activity>
 
         <activity android:name=".Fragment.FragmentActivity"/>
+        <activity android:name=".Fragment.NotificationTriggerActivity"/>
 
         <service  android:name=".Notification.NotificationService"
             android:exported="false"/>
