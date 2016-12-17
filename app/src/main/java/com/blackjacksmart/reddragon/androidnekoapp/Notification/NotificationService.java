@@ -38,27 +38,22 @@ public class NotificationService extends IntentService {
     public void initiateNotificationService(Intent intent){
         int NOTIFICATION_ID = 555;
 
-// Define an intent to trigger when notification is selected (in this case to open an activity)
         intent = new Intent(this, FragmentActivity.class);
 
-// Turn this into a PendingIntent
-        int requestID = (int) System.currentTimeMillis(); // Unique requestID to differentiate between various notification with same notification ID
-        int flags = PendingIntent.FLAG_CANCEL_CURRENT; // Cancel old intent and create new one
+        int requestID = (int) System.currentTimeMillis();
+        int flags = PendingIntent.FLAG_CANCEL_CURRENT;
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestID, intent, flags);
 
-// Attach the pendingIntent to a new notification using setContentIntent
         Notification notification = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("Marvel Alert:  ")
                 .setContentText("Unlocked New Character!")
                 .setContentIntent(pendingIntent)
-                .setAutoCancel(true) // Hides the notification after its been selected
+                .setAutoCancel(true)
                 .build();
 
-// Get the notification manager system service
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
-// Setting a notification ID allows you to update the notification later on.
         notificationManager.notify(NOTIFICATION_ID, notification);
     }
 
