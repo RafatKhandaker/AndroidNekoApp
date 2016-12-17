@@ -32,8 +32,10 @@ public class NotificationService extends IntentService {
 
         initiateNotificationService(intent);
 
-
     }
+
+
+//------------------------------NOTIFICATION METHOD-------------------------------------------------
 
     public void initiateNotificationService(Intent intent){
         int NOTIFICATION_ID = 555;
