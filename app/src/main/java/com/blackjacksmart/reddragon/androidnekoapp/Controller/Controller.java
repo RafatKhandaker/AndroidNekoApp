@@ -101,6 +101,19 @@ public class Controller {
             R.drawable.wolverine_background
     };
 
+    public static final Integer[] iconDefault = {
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon, R.drawable.uknown_icon, R.drawable.uknown_icon,
+            R.drawable.uknown_icon,
+    };
+
 
     public static ArrayList<Integer> generateRandomNumList(){
         ArrayList <Integer> randomList = new ArrayList<>();

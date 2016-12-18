@@ -10,9 +10,8 @@ import android.widget.TextView;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.ARRAY_CHARACTERS;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.isCharacterUnlocked;
 
 /**
  * Created by RedDragon on 12/6/16.
@@ -20,8 +19,8 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 
 public class GridAdapter extends BaseAdapter {
 
-    private ImageView icon;
-    private TextView iconText;
+private ImageView icon;
+private TextView iconText;
 
     private Context mContext;
     private LayoutInflater inflater;
@@ -57,14 +56,8 @@ public class GridAdapter extends BaseAdapter {
          icon = (ImageView) gridView.findViewById(R.id.image_view);
          iconText = (TextView) gridView.findViewById(R.id.text_view);
 
-        if(isCharacterUnlocked(i)) {
-            icon.setImageResource(icons[i]);
-            iconText.setText(ARRAY_CHARACTERS[i]);
-        }
-        else{
-            icon.setImageResource(R.drawable.uknown_icon);
+            icon.setImageResource(iconDefault[i]);
             iconText.setText("Locked !");
-        }
 
         return gridView;
     }

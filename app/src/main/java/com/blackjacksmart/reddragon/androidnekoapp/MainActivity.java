@@ -4,8 +4,8 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,8 +16,8 @@ import com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller;
 import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.Notification.NotificationReceiver;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.DatabaseHelper;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
@@ -34,11 +34,14 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
  *                                                               Last Modified:      12-06-16    **/
 /**----------------------------------------------------------------------------------------------**/
 
+/**   NOT QUITE FINISHED !  I HAVE A LOT MORE iDEAS WITH THIS APP, WILL CONTINUE**/
+
 public class MainActivity extends AppCompatActivity {
 
-@Nullable @BindView (R.id.gridview) GridView gridView;
+    public static GridView gridView;
 
 private static int positionClicked;
+private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,10 +49,12 @@ private static int positionClicked;
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-//       if(savedInstanceState.equals(null)) {
-        RANDOM_LIST = generateRandomNumList();
+        gridView = (GridView)findViewById(R.id.gridview);
 
-//       }
+        DatabaseHelper dbHelper = DatabaseHelper.getInstance(this);
+        db = dbHelper.getWritableDatabase();
+
+        RANDOM_LIST = generateRandomNumList();
 
         System.out.println(RANDOM_LIST);
         initiateNotificationTimer();
@@ -95,7 +100,6 @@ private static int positionClicked;
         // Change value to 60000L for presentation
         AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 60000L, pendingIntent);
-
 
     }
 
