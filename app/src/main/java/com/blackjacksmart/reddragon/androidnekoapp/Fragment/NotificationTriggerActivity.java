@@ -3,14 +3,12 @@ package com.blackjacksmart.reddragon.androidnekoapp.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
 
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
-import butterknife.BindView;
-
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.ARRAY_CHARACTERS;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.DEFAULT_CHAR_VALUE;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
@@ -23,8 +21,6 @@ import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.setPositi
  */
 
 public class NotificationTriggerActivity extends AppCompatActivity {
-
-@BindView (R.id.text_view) TextView textView;
 
     GridAdapter adapter;
 
@@ -62,7 +58,7 @@ public class NotificationTriggerActivity extends AppCompatActivity {
             RANDOM_LIST.remove(0);
 
         iconDefault[i] = icons[i];
-        textView.setText(ARRAY_CHARACTERS[i]);
+        DEFAULT_CHAR_VALUE[i] = ARRAY_CHARACTERS[i];
 
         gridView.invalidate();
         adapter.notifyDataSetChanged();

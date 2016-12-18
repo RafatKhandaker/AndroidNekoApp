@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.DEFAULT_CHAR_VALUE;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
 
@@ -57,7 +58,7 @@ private TextView iconText;
          iconText = (TextView) gridView.findViewById(R.id.text_view);
 
             icon.setImageResource(iconDefault[i]);
-            iconText.setText("Locked !");
+            iconText.setText(DEFAULT_CHAR_VALUE[i]);
 
         return gridView;
     }

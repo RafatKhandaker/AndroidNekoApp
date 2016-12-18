@@ -70,6 +70,14 @@ public class Controller {
             "VENOM", "WAR MACHINE", "WOLVERINE"
     };
 
+    public static String[] DEFAULT_CHAR_VALUE = {
+            "Locked !", "Locked !", "Locked !", "Locked !", "Locked !", "Locked !",
+            "Locked !", "Locked !", "Locked !", "Locked !", "Locked !", "Locked !",
+            "Locked !", "Locked !", "Locked !", "Locked !", "Locked !", "Locked !",
+            "Locked !", "Locked !", "Locked !", "Locked !", "Locked !", "Locked !",
+            "Locked !", "Locked !", "Locked !", "Locked !",
+    };
+
     public static final Integer[] icons = {
 
             R.drawable.beast_icon, R.drawable.black_panther_icon, R.drawable.captain_icon,
