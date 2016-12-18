@@ -12,6 +12,8 @@ import com.blackjacksmart.reddragon.androidnekoapp.Fragment.NotificationTriggerA
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_LOOP;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
+import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
 /**
  * Created by RedDragon on 12/13/16.
@@ -55,6 +57,7 @@ public class NotificationService extends IntentService {
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("Marvel Alert:  ")
                 .setContentText("Unlocked New Character!")
+                .setSmallIcon(icons[getPositionClicked()])
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build();

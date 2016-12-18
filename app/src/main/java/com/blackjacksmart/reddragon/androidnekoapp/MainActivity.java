@@ -38,7 +38,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 
 public class MainActivity extends AppCompatActivity {
 
-    public static GridView gridView;
+public static GridView gridView;
 
 private static int positionClicked;
 private SQLiteDatabase db;

@@ -20,6 +20,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.NOTIFICATION_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.charBackgroundImage;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
 /**
@@ -68,6 +69,7 @@ public class CharacterFragment extends Fragment {
 
         collapsingToolbar.setTitle(ARRAY_CHARACTERS[getPositionClicked()]);
         appBarLayout.setExpanded(true);
+        charHeaderImage.setImageResource(icons[getPositionClicked()]);
 
         // hiding & showing the title when toolbar expanded & collapsed
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {

@@ -31,9 +31,7 @@ public class NotificationTriggerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
 
-
         adapter = new GridAdapter(this);
-
 
         unlockCharacter();
         launchNewCharacterFrag();
