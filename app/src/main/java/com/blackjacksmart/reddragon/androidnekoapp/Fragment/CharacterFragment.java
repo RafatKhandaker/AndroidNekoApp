@@ -61,9 +61,11 @@ public class CharacterFragment extends Fragment {
     private void loadFragmentView(){
 
         collapsingToolbar.setTitle(ARRAY_CHARACTERS[getPositionClicked()]);
-        collapsingToolbar.setCollapsedTitleTextColor(Color.parseColor("#B39700"));
+        collapsingToolbar.setCollapsedTitleTextColor(Color.parseColor("#000000"));
         appBarLayout.setExpanded(true);
         charHeaderImage.setImageResource(charBackgroundImage[getPositionClicked()]);
+        charHeaderImage.setMaxHeight(500);
+        charHeaderImage.setMaxWidth(100);
 
         initCollapsingToolbar();
     }
@@ -82,7 +84,7 @@ public class CharacterFragment extends Fragment {
                 if (scrollRange == -1) {
                     scrollRange = appBarLayout.getTotalScrollRange();
                 }
-                if (scrollRange + verticalOffset == 0) {
+                if (scrollRange + verticalOffset == 500) {
                     collapsingToolbar.setTitle(ARRAY_CHARACTERS[getPositionClicked()]);
                     isShow = true;
                 } else if (isShow) {

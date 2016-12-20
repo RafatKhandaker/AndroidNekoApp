@@ -37,7 +37,6 @@ public class NotificationTriggerActivity extends AppCompatActivity {
 
     }
 
-
     private void launchNewCharacterFrag(){
         android.app.FragmentManager fragmentManager = getFragmentManager();
         android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -57,8 +56,8 @@ public class NotificationTriggerActivity extends AppCompatActivity {
         iconDefault[i] = icons[i];
         DEFAULT_CHAR_VALUE[i] = ARRAY_CHARACTERS[i];
 
-        gridView.invalidate();
         adapter.notifyDataSetChanged();
+        gridView.invalidate();
 
     }
 }
