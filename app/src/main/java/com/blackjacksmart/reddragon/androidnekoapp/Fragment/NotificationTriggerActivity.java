@@ -23,7 +23,6 @@ import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.setPositi
 public class NotificationTriggerActivity extends AppCompatActivity {
 
     GridAdapter adapter;
-
     private int i;
 
     @Override

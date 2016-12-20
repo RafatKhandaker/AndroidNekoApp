@@ -58,22 +58,29 @@ private SQLiteDatabase db;
 
         System.out.println(RANDOM_LIST);
         initiateNotificationTimer();
-        initiateGridView();
-
     }
-//-----------------------------------Retrieve/Set Variable----------------------------------------------
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initiateGridView();
+    }
+//-----------------------------------Retrieve/Set Variable------------------------------------------
+
     public static int getPositionClicked(){ return positionClicked; }
     public static void setPositionClicked(int i){  positionClicked = i; }
+
 //--------------------------------- Initiate GridView-----------------------------------------------
 
     public void initiateGridView(){
         gridView.setAdapter(new GridAdapter(this));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 positionClicked = (i);
-
+                System.out.println("" + checkCharacterUnlocked[i]);
                 if(checkCharacterUnlocked[i]){
                     Controller.toastCharacter(MainActivity.this, positionClicked);
                     launchFragmentActivity(view.getContext()); }
@@ -82,7 +89,8 @@ private SQLiteDatabase db;
             }
         });
     }
-    //--------------------------------------Fragment Method---------------------------------------------
+//--------------------------------------Fragment Method---------------------------------------------
+
     private void launchFragmentActivity(Context context){
         Intent intent = new Intent(context, FragmentActivity.class);
         context.startActivity(intent);

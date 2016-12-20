@@ -1,6 +1,7 @@
 package com.blackjacksmart.reddragon.androidnekoapp.Fragment;
 
 import android.app.Fragment;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -20,7 +21,6 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.NOTIFICATION_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.charBackgroundImage;
-import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
 /**
@@ -44,14 +44,14 @@ public class CharacterFragment extends Fragment {
                         R.layout.char_description_fragment, container, false);
 
                 ButterKnife.bind(this,characterViewFragment);
-                initCollapsingToolbar();
+                loadFragmentView();
                 break;
             case NOTIFICATION_TRIGGER:
                  characterViewFragment = inflater.inflate(
                         R.layout.char_description_fragment, container, false);
 
                 ButterKnife.bind(this,characterViewFragment);
-                initCollapsingToolbar();
+                loadFragmentView();
                 break;
         }
 
@@ -59,22 +59,23 @@ public class CharacterFragment extends Fragment {
     }
 
     private void loadFragmentView(){
-        initCollapsingToolbar();
+
+        collapsingToolbar.setTitle(ARRAY_CHARACTERS[getPositionClicked()]);
+        collapsingToolbar.setCollapsedTitleTextColor(Color.parseColor("#B39700"));
+        appBarLayout.setExpanded(true);
         charHeaderImage.setImageResource(charBackgroundImage[getPositionClicked()]);
 
+        initCollapsingToolbar();
     }
 
 //------------------------------------Toolbar Effect------------------------------------------------
-    private void initCollapsingToolbar() {
 
-        collapsingToolbar.setTitle(ARRAY_CHARACTERS[getPositionClicked()]);
-        appBarLayout.setExpanded(true);
-        charHeaderImage.setImageResource(icons[getPositionClicked()]);
+    private void initCollapsingToolbar() {
 
         // hiding & showing the title when toolbar expanded & collapsed
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
-            int scrollRange = -1;
+            double scrollRange = -1;
 
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {

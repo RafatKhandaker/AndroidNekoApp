@@ -98,15 +98,15 @@ public class Controller {
             R.drawable.carnage_background, R.drawable.cyclops_background,
             R.drawable.deadpool_background, R.drawable.gambit_background,
             R.drawable.hulk_background, R.drawable.human_torch_background,
-            R.drawable.ice_man_background, R.drawable.jean_grey_background,
-            R.drawable.jubilee_background, R.drawable.kitty_background,
-            R.drawable.mystique_background, R.drawable.nightcrawler_background,
-            R.drawable.professor_x_background, R.drawable.psylocke_background,
-            R.drawable.rogue_background, R.drawable.silver_surfer_background,
-            R.drawable.spidey_background, R.drawable.steel_background,
-            R.drawable.storm_background, R.drawable.thor_background,
-            R.drawable.venom_background, R.drawable.war_machine_background,
-            R.drawable.wolverine_background
+            R.drawable.ice_man_background, R.drawable.iron_man_background,
+            R.drawable.jean_grey_background, R.drawable.jubilee_background,
+            R.drawable.kitty_background, R.drawable.mystique_background,
+            R.drawable.nightcrawler_background, R.drawable.professor_x_background,
+            R.drawable.psylocke_background, R.drawable.rogue_background,
+            R.drawable.silver_surfer_background, R.drawable.spidey_background,
+            R.drawable.steel_background, R.drawable.storm_background,
+            R.drawable.thor_background, R.drawable.venom_background,
+            R.drawable.war_machine_background, R.drawable.wolverine_background
     };
 
     public static final Integer[] iconDefault = {
@@ -136,101 +136,13 @@ public class Controller {
         Toast.makeText(context,"" + ARRAY_CHARACTERS[n], Toast.LENGTH_SHORT).show();
     }
 
-    private static boolean setTrue(Boolean character){return character = true;}
 
-    public static boolean isCharacterUnlocked(int i){
+    public boolean isCharacterUnlocked(int i){
         return checkCharacterUnlocked[i];
     }
 
     public static void unlockRandomCharacter(int checkValue){
-
-        switch(checkValue){
-            case 0:
-                if(!BEAST){ setTrue(BEAST); }
-
-                break;
-            case 1:
-                if(!BLACK_PANTHER){ setTrue(BLACK_PANTHER); }
-                break;
-            case 2:
-                if(!CAPTAIN_AMERICA){ setTrue(CAPTAIN_AMERICA); }
-                break;
-            case 3:
-                if(!CAPTAIN_MARVEL){ setTrue(CAPTAIN_MARVEL); }
-                break;
-            case 4:
-                if(!CARNAGE){ setTrue(CARNAGE); }
-                break;
-            case 5:
-                if(!CYCLOPS){ setTrue(CYCLOPS); }
-                break;
-            case 6:
-                if(!DEADPOOL){ setTrue(DEADPOOL); }
-                break;
-            case 7:
-                if(!GAMBIT){ setTrue(GAMBIT); }
-                break;
-            case 8:
-                if(!HULK){ setTrue(HULK); }
-                break;
-            case 9:
-                if(!HUMAN_TORCH){ setTrue(HUMAN_TORCH); }
-                break;
-            case 10:
-                if(!ICE_MAN){ setTrue(ICE_MAN); }
-                break;
-            case 11:
-                if(!IRON_MAN){ setTrue(IRON_MAN); }
-                break;
-            case 12:
-                if(!JEAN_GREY){ setTrue(JEAN_GREY); }
-                break;
-            case 13:
-                if(!JUBILEE){ setTrue(JUBILEE); }
-                break;
-            case 14:
-                if(!SHADOW_CAT){ setTrue(SHADOW_CAT); }
-                break;
-            case 15:
-                if(!MYSTIQUE){ setTrue(MYSTIQUE); }
-                break;
-            case 16:
-                if(!NIGHT_CRAWLER){ setTrue(NIGHT_CRAWLER); }
-                break;
-            case 17:
-                if(!XAVIER){ setTrue(XAVIER); }
-                break;
-            case 18:
-                if(!PSYLOCKE){ setTrue(PSYLOCKE); }
-                break;
-            case 19:
-                if(!ROGUE){ setTrue(ROGUE); }
-                break;
-            case 20:
-                if(!ROGUE){ setTrue(SILVER_SURFER); }
-                break;
-            case 21:
-                if(!SPIDER_MAN){ setTrue(SPIDER_MAN); }
-                break;
-            case 22:
-                if(!STEEL){ setTrue(STEEL); }
-                break;
-            case 23:
-                if(!STORM){ setTrue(STORM); }
-                break;
-            case 24:
-                if(!THOR){ setTrue(THOR); }
-                break;
-            case 25:
-                if(!VENOM){ setTrue(VENOM); }
-                break;
-            case 26:
-                if(!WAR_MACHINE){ setTrue(WAR_MACHINE); }
-                break;
-            case 27:
-                if(!WOLVERINE){ setTrue(WOLVERINE); }
-                break;
-        }
+        checkCharacterUnlocked[checkValue] = true;
     }
 
 }
