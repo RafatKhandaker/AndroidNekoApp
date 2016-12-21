@@ -2,4 +2,294 @@
     <string name="app_name">AndroidNekoApp</string>
     <string name="public_key">de0a013fa5fde93d63827ada6a7d9b3e</string>
     <string name="private_key">9f00aa0a68664725781b821980a1b28c87388a86</string>
+
+ <!-- SPIDER MAN-->
+    <string name="Spidey_identity">Peter Benjamin Parker</string>
+    <string name="Spidey_abilities">Peter is an accomplished scientist, inventor and photographer.</string>
+    <string name="Spidey_height">5ft 10in</string>
+    <string name="Spidey_weight">167 lbs</string>
+    <string name="Spidey_powers"
+                >"Peter can cling to most surfaces, has superhuman strength (able to lift 10 tons optimally)
+				  and is roughly 15 times more agile than a regular human. The combination of his acrobatic
+				  leaps and web-slinging enables him to travel rapidly from place to place. His spider-sense
+				  provides an early warning detection system linked with his superhuman kinesthetics, enabling
+				  him the ability to evade most any injury, provided he doesn't cognitively override the autonomic
+				  reflexes. Note: his power enhancements through his transformation by the Queen and after battling
+				   Morlun - including his organic web glands and stingers - have been undone after Spider-Man's deal
+				    with Mephisto"
+    </string>
+    <string name="Spidey_summary"
+                    >"Bitten by a radioactive spider, high school student Peter Parker
+		            gained the speed, strength and powers of a spider. Adopting the
+		            name Spider-Man, Peter hoped to start a career using his new abilities.
+		            Taught that with great power comes great responsibility, Spidey has vowed
+		            to use his powers to help people."
+    </string>
+    <string name="Spidey_group">"Avengers, formerly the Secret Defenders, New Fantastic Four, the Outlaws."</string>
+    <string name="Spidey_origin">Amazing Fantasy #15 (1962)</string>
+
+<!-- Captain Marvel-->
+
+    <string name="Captain_Marvel_identity">Carol Danvers</string>
+    <string name="Captain_Marvel_abilities">"Ms. Marvel is a skilled pilot and hand to hand combatant"</string>
+    <string name="Captain_Marvel_height">5ft 11in</string>
+    <string name="Captain_Marvel_weight">165 lbs</string>
+    <string name="Captain_Marvel_powers"
+                    >"Ms. Marvel's current powers include flight, enhanced strength, durability and the ability
+	   				to shoot concussive energy bursts from her hands."
+    </string>
+    <string name="Captain_Marvel_summary"></string>
+    <string name="Captain_Marvel_group">"Avengers; formerly Queen's Vengeance, Starjammers."</string>
+    <string name="Captain_Marvel_origin">Marvel Super Heroes #18, Ms. Marvel #1(2006)</string>
+
+
+<!-- Captain America-->
+
+    <string name="Captain_America_identity">Steven Rogers</string>
+    <string name="Captain_America_abilities"
+        >"Captain America had mastered the martial arts of American-style boxing and judo, and had combined
+	   				   these disciplines with his own unique hand-to-hand style of combat. He had also shown skill and knowledge
+	   				   of a number of other martial arts. He engaged in a daily regimen of rigorous exercise (including aerobics,
+	   				   weight lifting, gymnastics, and simulated combat) to keep himself in peak condition. Captain America was one
+	   				   of the finest human combatants Earth had ever known."
+    </string>
+    <string name="Captain_America_height">6ft 2in</string>
+    <string name="Captain_America_weight">220 lbs</string>
+    <string name="Captain_America_powers"
+        >"Captain America represented the pinnacle of human physical perfection. He experienced a time
+	   			   when he was augmented to superhuman levels, but generally performed just below superhuman levels
+	   			   for most of his career. Captain America had a very high intelligence as well as agility, strength,
+	   			   speed, endurance, and reaction time superior to any Olympic athlete who ever competed. The Super-Soldier
+	   			   formula that he had metabolized had enhanced all of his bodily functions to the peak of human efficiency.
+	   			   Most notably, his body eliminates the excessive build-up of fatigue-producing poisons in his muscles, granting
+	   			   him phenomenal endurance."
+    </string>
+    <string name="Captain_America_summary"
+        >"Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army.
+        Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty."
+    </string>
+    <string name="Captain_America_group"
+        >"Secret Avengers; formerly the Avengers, Invaders, Captain's Unnamed Superhero Team, Redeemers; formerly partner of Winter
+        Soldier,Bucky, Jones, Rick, Rick Jones, Falcon (Sam Wilson), Falcon, Demolition Man and Nomad (Jack Monroe)"
+    </string>
+    <string name="Captain_America_origin">
+        "Origin Captain America Comics #1 (1941); Tales of Suspense #63 (1965); Captain America #109 (1969); Captain America #255 (1981);
+        Adventures of Captain America #1-2 (1991)"
+    </string>
+
+
+<!-- Iron Man-->
+
+    <string name="Iron_Man_identity">Anthony Edward Tony Stark</string>
+    <string name="Iron_Man_abilities"
+        >"Tony has a genius level intellect that allows him to invent a wide range of sophisticated devices,
+        specializing in advanced weapons and armor. He possesses a keen business mind."
+    </string>
+    <string name="Iron_Man_height">6ft 1in; 6ft 6in (in armor)</string>
+    <string name="Iron_Man_weight">225 lbs; 425 lbs (in armor)</string>
+    <string name="Iron_Man_powers"
+        >"None; Tony's body had been enhanced by the modified techno-organic virus, Extremis, but it is currently
+        inaccessible and inoperable."
+    </string>
+
+    <string name="Iron_Man_summary"
+        >"Wounded, captured and forced to build a weapon by his enemies, billionaire industrialist Tony Stark instead
+        created an advanced suit of armor to save his life and escape captivity. Now with a new outlook on life, Tony
+        uses his money and intelligence to make the world a safer, better place as Iron Man."</string>
+    <string name="Iron_Man_group">
+        "The Avengers, Initiative, Hellfire Club (outer circle), S.H.I.E.L.D., Illuminati,
+        Thunderbolts, Force Works, Queen's Vengeance, Alcoholics Anonymous"</string>
+    <string name="Iron_Man_origin">Tales of Suspense #39 (1963)</string>
+
+<!--Rogue-->
+
+    <string name="Rogue_identity">Anna Marie</string>
+    <string name="Rogue_abilities">
+        "Rogue could formerly draw upon the combat and espionage training of Carol Danvers by
+        granting control of her body to her alternate personality, a duplicate of Danvers'.
+        Rogue can also speak fluent French."
+    </string>
+    <string name="Rogue_height">5ft 8in</string>
+    <string name="Rogue_weight">120 lbs</string>
+    <string name="Rogue_powers"
+        >"Rogue is a mutant who formerly possessed the ability to absorb the memories, abilities, personality, and outward
+        physical characteristics of other beings through skin-to-skin contact. Such transfers lasted for 60 times longer
+        than the contact time, with extended contact resulting in the possibility of permanent absorption. No upper limit
+        had been determined for the number of beings Rogue could simultaneously imprint.Upon absorbing another's memories,
+        Rogue also gained any associated emotional responses. Rogue was typically able to control such emotions, however
+        absorbing psyches more powerful than her own resulted in Rogue’s psyche being supplanted.After permanently
+        absorbing the powers of Ms. Marvel (Carol Danvers), Ms. Marvel, Rogue possessed an amalgamated mutant human/alien
+        Kree physiology that granted her a degree of immunity to poisons, and a virtually indestructible body. Rogue also
+        possessed Ms. Marvel's above normal reflexes and psychic seventh sense that enabled her to subconsciously anticipate
+        an opponent’s moves. Whilst Rogue possessed Ms. Marvel's psyche, her double consciousness made her resistant to
+        telepathic probes from even the most powerful mind readers. She also gained Ms. Marvel's incredible strength, and
+        supersonic flight.After absorbing the powers of an alien Skrull, Rogue began to spontaneously reactivate previously
+        absorbed abilities. Rogue could also tap into the residual psychic energy of those she had imprinted to determine
+        their status and to relive past events from their perspective.Recently, Rogue has seemingly permanently absorbed
+        the fire-based powers of Sunfire (Shiro Yoshida), Sunfire."
+    </string>
+    <string name="Rogue_summary"></string>
+    <string name="Rogue_group">"X-Men, formerly X.S.E, Brotherhood of Mutants, Brotherhood of Evil Mutants"</string>
+    <string name="Rogue_origin">"Rogue #2 (2004), Uncanny X-Men #185 (1984), Cable #87 (2001), Classic X-Men #44 (1990 origin)"</string>
+
+<!--Beast-->
+
+    <string name="Beast_identity">Henry (Hank) P. McCoy</string>
+    <string name="Beast_abilities">
+        "Hank is considered one of the world\'s experts on mutations and evolutionary Humans, human-biology. He has extensive knowledge
+        of genetics, biochemistry, and a variety of other scientific fields. Hank is also an accomplished keyboard player."</string>
+    <string name="Beast_height">5ft 11in</string>
+    <string name="Beast_weight">402 lbs</string>
+    <string name="Beast_powers"
+        >"The Beast possesses superhuman strength, agility, endurance, and speed, despite his bulk. He possesses the agility of a
+        great ape and the acrobatic prowess of an accomplished circus aerialist. His physiology is durable enough to allow him to
+        survive a three story fall by landing on his feet without suffering any broken bones or sprains. The Beast's legs are powerful
+        enough to enable him to leap approximately 15 feet high in a standing high jump, and around 25 feet in a standing broad jump.
+        He can also run on all fours at approximately 40 miles per hour for short sprints.The Beast can crawl up brick walls by wedging
+        his fingers and toes into the smallest cracks and applying a vice-like grip on them, as well as walk a tightrope with minimal
+        effort. He is adept in performing complicated sequences of gymnastics such as flips, rolls, and springs, and can also walk on
+        his hands for many hours. Further, his manual and pedial dexterity are so great that he can perform multiple tasks such as writing
+        with both hands at once or tie knots in rope with his toes.The Beast possesses enhanced senses, the ability to secrete pheromones
+        to attract members of the opposite sex, as well as a slight healing factor that allows him to regenerate minor wounds and recover
+        quickly from minor ailments such as colds. The Beast also possesses cat-like night vision as well as razor-sharp claws on his
+        hands and feet."</string>
+    <string name="Beast_summary"></string>
+    <string name="Beast_group">"Secret Avengers; formerly S.W.O.R.D., X-Club, X-Men, X-Factor/X-Terminators, Defenders, Avengers, Rejects"</string>
+    <string name="Beast_origin">X-Men #49-53 (1968-1969)</string>
+
+<!--Black panther-->
+
+    <string name="Black_Panther_identity">T Challa</string>
+    <string name="Black_Panther_abilities"
+        >"T'Challa is a brilliant tactician, strategist, scientist, tracker and a master of all forms of unarmed combat whose unique hybrid fighting
+        style incorporates acrobatics and aspects of animal mimicry. T'Challa being a royal descendent of a warrior race is also a master of armed
+        combat, able to use a variety of weapons but prefers unarmed combat. He is a master planner who always thinks several steps ahead and will
+        go to extreme measures to achieve his goals and protect the kingdom of Wakanda."</string>
+    <string name="Black_Panther_height">6ft 0in</string>
+    <string name="Black_Panther_weight">200 lbs</string>
+    <string name="Black_Panther_powers">"T Challa's senses and physical attributes have been enhanced to superhuman levels by the heart-shaped herb."</string>
+    <string name="Black_Panther_summary"></string>
+    <string name="Black_Panther_group">"Formerly Fantastic Four, Secret Avengers, Avengers, Pendragons, Queen's Vengeance, former Fantastic Force financier."</string>
+    <string name="Black_Panther_origin">Fantastic Four Vol. 1 #52 (1966)</string>
+
+<!--Storm-->
+
+    <string name="Storm_identity">Ororo Monroe</string>
+    <string name="Storm_abilities">Weather Control</string>
+    <string name="Storm_height">5ft 11in</string>
+    <string name="Storm_weight">145 lbs</string>
+    <string name="Storm_powers"
+        >"Storm is one of the most powerful mutants on Earth and has demonstrated a plethora of abilities, most of which are facets of her power
+        to manipulate the weather.[84] Storm possesses the psionic ability to control all forms of weather over vast areas. She has been able to
+        control both Earthly and extraterrestrial ecosystems. She can modify the temperature of the environment, control all forms of precipitation,
+        humidity and moisture (at a molecular level), generate lightning and other electromagnetic atmospheric phenomena, and has demonstrated excellent
+        control over atmospheric pressure. She can incite all forms of meteorological tempests, such as tornadoes, thunderstorms, blizzards, and hurricanes,
+        [85] as well as mist. She can dissipate such weather to form clear skies as well."</string>
+    <string name="Storm_summary">"Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair, blue eyes, and thepotential to wield magic."</string>
+    <string name="Storm_group">"Avengers[2], X-Men, Fantastic Four, Lady Liberators, Morlocks"</string>
+    <string name="Storm_origin">Giant-Size X-Men #1, May 1975</string>
+
+<!--Cyclops-->
+
+    <string name="Cyclops_identity">Scott Summers</string>
+    <string name="Cyclops_abilities">"Cyclops possesses several skills. Among them are:* Master Strategist and Tactician* Master Martial Artist* Expert Pilot* Telepathic Resistance"</string>
+    <string name="Cyclops_height">6ft 3in</string>
+    <string name="Cyclops_weight">195 lbs</string>
+    <string name="Cyclops_powers">
+        "Cyclops possesses the mutant ability to project a beam of heatless ruby-colored concussive force from his eyes, which act as inter-dimensional aperturesbetween this universe and another.
+        Cyclops' body constantly absorbs ambient energy, such as sunlight, from his environment into his body's cells that allows him to open the apertures. Cyclops' mind generates a psionic field
+        that is attuned to the forces that maintain the apertures. Because this field envelops his body, it automatically shunts the other-dimensional particles back into their point of origin when
+        they collide with his body. Thus, his body is protected from the effects of the particles, and even the thin membranes of his eyelids are sufficient to block the emission of energy. The synthetic
+        ruby quartz crystal used to fashion the lenses of Cyclops' eyewear is resonant to his minds' psionic field and is similarly protected.The width of Cyclops' optic blast is focused by his mind's
+        psionic field with the same autonomic function that regulated his original eyes' ability to focus. As Cyclops focuses, the size of the apertures change and thus act as a valve to control the flow
+        of particles and the beam's relative power. The height of Cyclops's eye-blast is controlled by his visor's adjustable slit. The beam's effective range is approximately 2,000 feet.Due to a head injury,
+        Cyclops is unable to shut off his optic blasts at will and must therefore wear ruby quartz lenses to block the beams."</string>
+    <string name="Cyclops_summary"></string>
+    <string name="Cyclops_group">X-Men, formerly Twelve, X-Factor, X-Factor/X-Terminators</string>
+    <string name="Cyclops_origin">Uncanny X-Men #156 (1982), Classic X-Men #41-42 (1989), X-Men #39-42 (1967-1968)</string>
+
+<!--Dead Pool-->
+
+    <string name="Dead_Pool_identity"></string>
+    <string name="Dead_Pool_abilities"></string>
+    <string name="Dead_Pool_height"></string>
+    <string name="Dead_Pool_weight"></string>
+    <string name="Dead_Pool_powers"></string>
+    <string name="Dead_Pool_summary"></string>
+    <string name="Dead_Pool_group"></string>
+    <string name="Dead_Pool_origin"></string>
+
+    <!--Black panther-->
+
+    <!--<string name="Captain_America_identity"></string>-->
+    <!--<string name="Captain_America_abilities"></string>-->
+    <!--<string name="Captain_America_height"></string>-->
+    <!--<string name="Captain_America_weight"></string>-->
+    <!--<string name="Captain_America_powers"></string>-->
+    <!--<string name="Captain_America_summary"></string>-->
+    <!--<string name="Captain_America_group"></string>-->
+    <!--<string name="Captain_America_origin"></string>-->
+
+
+    <!--Black panther-->
+
+    <!--<string name="Captain_America_identity"></string>-->
+    <!--<string name="Captain_America_abilities"></string>-->
+    <!--<string name="Captain_America_height"></string>-->
+    <!--<string name="Captain_America_weight"></string>-->
+    <!--<string name="Captain_America_powers"></string>-->
+    <!--<string name="Captain_America_summary"></string>-->
+    <!--<string name="Captain_America_group"></string>-->
+    <!--<string name="Captain_America_origin"></string>-->
+
+
+    <!--Black panther-->
+
+    <!--<string name="Captain_America_identity"></string>-->
+    <!--<string name="Captain_America_abilities"></string>-->
+    <!--<string name="Captain_America_height"></string>-->
+    <!--<string name="Captain_America_weight"></string>-->
+    <!--<string name="Captain_America_powers"></string>-->
+    <!--<string name="Captain_America_summary"></string>-->
+    <!--<string name="Captain_America_group"></string>-->
+    <!--<string name="Captain_America_origin"></string>-->
+
+
+    <!--Black panther-->
+
+    <!--<string name="Captain_America_identity"></string>-->
+    <!--<string name="Captain_America_abilities"></string>-->
+    <!--<string name="Captain_America_height"></string>-->
+    <!--<string name="Captain_America_weight"></string>-->
+    <!--<string name="Captain_America_powers"></string>-->
+    <!--<string name="Captain_America_summary"></string>-->
+    <!--<string name="Captain_America_group"></string>-->
+    <!--<string name="Captain_America_origin"></string>-->
+
+
+    <!--Black panther-->
+
+    <!--<string name="Captain_America_identity"></string>-->
+    <!--<string name="Captain_America_abilities"></string>-->
+    <!--<string name="Captain_America_height"></string>-->
+    <!--<string name="Captain_America_weight"></string>-->
+    <!--<string name="Captain_America_powers"></string>-->
+    <!--<string name="Captain_America_summary"></string>-->
+    <!--<string name="Captain_America_group"></string>-->
+    <!--<string name="Captain_America_origin"></string>-->
+
+
+    <!--Black panther-->
+
+    <!--<string name="Captain_America_identity"></string>-->
+    <!--<string name="Captain_America_abilities"></string>-->
+    <!--<string name="Captain_America_height"></string>-->
+    <!--<string name="Captain_America_weight"></string>-->
+    <!--<string name="Captain_America_powers"></string>-->
+    <!--<string name="Captain_America_summary"></string>-->
+    <!--<string name="Captain_America_group"></string>-->
+    <!--<string name="Captain_America_origin"></string>-->
+
+
+
 </resources>

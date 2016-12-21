@@ -48,15 +48,16 @@ public class NotificationTriggerActivity extends AppCompatActivity {
     private void unlockCharacter(){
 
         i = RANDOM_LIST.get(0);
-        System.out.println("random list is : " +i);
+
             setPositionClicked(i);
             unlockRandomCharacter(i);
+
             RANDOM_LIST.remove(0);
 
         iconDefault[i] = icons[i];
         DEFAULT_CHAR_VALUE[i] = ARRAY_CHARACTERS[i];
-
         adapter.notifyDataSetChanged();
+
         gridView.invalidate();
 
     }

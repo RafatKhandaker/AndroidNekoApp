@@ -6,14 +6,18 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.content.ContextCompat;
 
 import com.blackjacksmart.reddragon.androidnekoapp.Fragment.NotificationTriggerActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_LOOP;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
-import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
 /**
  * Created by RedDragon on 12/13/16.
@@ -53,11 +57,16 @@ public class NotificationService extends IntentService {
         int flags = PendingIntent.FLAG_CANCEL_CURRENT;
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestID, intent, flags);
 
+        Drawable drawable= ContextCompat.getDrawable(this,icons[RANDOM_LIST.get(0)]);
+
+        Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
+
         Notification notification = new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.notification_icon)
                 .setContentTitle("Marvel Alert:  ")
                 .setContentText("Unlocked New Character!")
-                .setSmallIcon(icons[getPositionClicked()])
+                .setSmallIcon(R.drawable.marvel_small_icon)
+                .setLargeIcon(bitmap)
                 .setContentIntent(pendingIntent)
                 .setAutoCancel(true)
                 .build();

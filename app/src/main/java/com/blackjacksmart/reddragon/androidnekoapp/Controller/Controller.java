@@ -93,6 +93,7 @@ public class Controller {
     };
 
     public static final Integer[] charBackgroundImage = {
+
             R.drawable.beast_background, R.drawable.black_panther_background,
             R.drawable.captain_background, R.drawable.captain_marvel_background,
             R.drawable.carnage_background, R.drawable.cyclops_background,
