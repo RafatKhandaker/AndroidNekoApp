@@ -4,9 +4,39 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Beast;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.BlackPanther;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.CaptainAmerica;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.CaptainMarvel;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Carnage;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Cyclops;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Deadpool;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Gambit;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Hulk;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.HumanTorch;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.IceMan;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.IronMan;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.JeanGrey;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Jubilee;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Mystique;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.NightCrawler;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Psylocke;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Rogue;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.ShadowCat;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.SilverSurfer;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.SpiderMan;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Steel;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Storm;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Thor;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Venom;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.WarMachine;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Wolverine;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Xavier;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Hero;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by RedDragon on 12/16/16.
@@ -22,6 +52,70 @@ public class Controller {
     public static int FRAGMENT_VALUE;
     public static final int GRID_TRIGGER = 1;
     public static final int NOTIFICATION_TRIGGER = 0;
+
+    public static List<Hero> heroList;
+
+     private static final Beast Beast = new Beast();
+     private static final BlackPanther BlackPanther =  new BlackPanther();
+     private static final CaptainAmerica CaptainAmerica = new CaptainAmerica();
+     private static final CaptainMarvel CaptainMarvel = new CaptainMarvel();
+     private static final Carnage Carnage = new Carnage();
+     private static final Cyclops Cyclops = new Cyclops();
+     private static final Deadpool Deadpool = new Deadpool();
+     private static final Gambit Gambit = new Gambit();
+     private static final Hulk Hulk = new Hulk();
+     private static final HumanTorch HumanTorch = new HumanTorch();
+     private static final IceMan IceMan = new IceMan();
+     private static final IronMan IronMan = new IronMan();
+     private static final JeanGrey JeanGrey = new JeanGrey();
+     private static final Jubilee Jubilee = new Jubilee();
+     private static final Mystique Mystique = new Mystique();
+     private static final NightCrawler NightCrawler = new NightCrawler();
+     private static final Psylocke Psylocke = new Psylocke();
+     private static final Rogue Rogue = new Rogue();
+     private static final ShadowCat ShadowCat = new ShadowCat();
+     private static final SilverSurfer SilverSurfer = new SilverSurfer();
+     private static final SpiderMan SpiderMan = new SpiderMan();
+     private static final Steel Steel = new Steel();
+     private static final Storm Storm = new Storm();
+     private static final Thor Thor = new Thor();
+     private static final Venom Venom = new Venom();
+     private static final WarMachine WarMachine = new WarMachine();
+     private static final Wolverine Wolverine = new Wolverine();
+     private static final Xavier Xavier = new Xavier();
+
+    static{
+        heroList.add(Beast);
+        heroList.add(BlackPanther);
+        heroList.add(CaptainAmerica);
+        heroList.add(CaptainMarvel);
+        heroList.add(Carnage);
+        heroList.add(Cyclops);
+        heroList.add(Deadpool);
+        heroList.add(Gambit);
+        heroList.add(Hulk);
+        heroList.add(HumanTorch);
+        heroList.add(IceMan);
+        heroList.add(IronMan);
+        heroList.add(JeanGrey);
+        heroList.add(Jubilee);
+        heroList.add(ShadowCat);
+        heroList.add(Mystique);
+        heroList.add(NightCrawler);
+        heroList.add(Xavier);
+        heroList.add(Psylocke);
+        heroList.add(Rogue);
+        heroList.add(SilverSurfer);
+        heroList.add(SpiderMan);
+        heroList.add(Steel);
+        heroList.add(Storm);
+        heroList.add(Thor);
+        heroList.add(Venom);
+        heroList.add(WarMachine);
+        heroList.add(Wolverine);
+    }
+
+
 
     public static boolean BEAST = false;
     public static boolean BLACK_PANTHER = false;

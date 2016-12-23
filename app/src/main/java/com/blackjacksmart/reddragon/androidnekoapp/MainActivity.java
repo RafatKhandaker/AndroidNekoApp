@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
 public static GridView gridView;
 
 private static int positionClicked;
-private SQLiteDatabase db;
+private SQLiteDatabase database;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,14 +50,14 @@ private SQLiteDatabase db;
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        gridView = (GridView)findViewById(R.id.gridview);
 
-        DatabaseHelper dbHelper = DatabaseHelper.getInstance(this);
-        db = dbHelper.getWritableDatabase();
+        gridView = (GridView)findViewById(R.id.gridview);
+        database = instantiateDataBase();
 
         RANDOM_LIST = generateRandomNumList();
 
         System.out.println(RANDOM_LIST);
+
         initiateNotificationTimer();
     }
 
@@ -108,6 +109,16 @@ private SQLiteDatabase db;
         // Change value to 60000L for presentation
         AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 60000L, pendingIntent);
+
+    }
+
+//-------------------------------------Instantiate Database------------------------------------------
+    private SQLiteDatabase instantiateDataBase(){
+
+        DatabaseHelper dataBaseHelper = DatabaseHelper.getInstance(this);
+        SQLiteDatabase database = dataBaseHelper.getWritableDatabase();
+        return database;
+
 
     }
 

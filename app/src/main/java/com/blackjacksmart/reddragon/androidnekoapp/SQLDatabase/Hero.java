@@ -8,7 +8,7 @@ public class Hero {
 
     private Long _id;
 
-    private int id;
+    protected int id;
     private String character;
     private String identity;
     private String abilities;
@@ -19,23 +19,11 @@ public class Hero {
     private String group;
     private String origin;
 
+    public Hero(){}
 
-    public Hero(){
-        this.id = 0;
-        this.character = "";
-        this.identity = "";
-        this.abilities = "";
-        this.height = "";
-        this.weight = "";
-        this.powers = "";
-        this.summary = "";
-        this.group = "";
-        this.origin = "";
-    }
-
-    public Hero( int id, String character, String identity, String abilities,
-                String height, String weight, String powers, String summary, String group,
-                String origin){
+    public Hero(
+            int id, String character, String identity, String abilities, String height,
+            String weight, String powers, String summary, String group, String origin) {
 
         this.id = id;
         this.character = character;

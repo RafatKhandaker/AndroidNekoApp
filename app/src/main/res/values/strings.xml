@@ -66,8 +66,8 @@
     </string>
     <string name="Captain_America_summary"
         >"Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army.
-        Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty."
-    </string>
+    Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty."
+</string>
     <string name="Captain_America_group"
         >"Secret Avengers; formerly the Avengers, Invaders, Captain's Unnamed Superhero Team, Redeemers; formerly partner of Winter
         Soldier,Bucky, Jones, Rick, Rick Jones, Falcon (Sam Wilson), Falcon, Demolition Man and Nomad (Jack Monroe)"
@@ -185,14 +185,16 @@
         humidity and moisture (at a molecular level), generate lightning and other electromagnetic atmospheric phenomena, and has demonstrated excellent
         control over atmospheric pressure. She can incite all forms of meteorological tempests, such as tornadoes, thunderstorms, blizzards, and hurricanes,
         [85] as well as mist. She can dissipate such weather to form clear skies as well."</string>
-    <string name="Storm_summary">"Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair, blue eyes, and thepotential to wield magic."</string>
+    <string name="Storm_summary">"Ororo Monroe is the descendant of an ancient line of African priestesses, all of whom have white hair,
+        blue eyes, and thepotential to wield magic."</string>
     <string name="Storm_group">"Avengers[2], X-Men, Fantastic Four, Lady Liberators, Morlocks"</string>
     <string name="Storm_origin">Giant-Size X-Men #1, May 1975</string>
 
 <!--Cyclops-->
 
     <string name="Cyclops_identity">Scott Summers</string>
-    <string name="Cyclops_abilities">"Cyclops possesses several skills. Among them are:* Master Strategist and Tactician* Master Martial Artist* Expert Pilot* Telepathic Resistance"</string>
+    <string name="Cyclops_abilities">"Cyclops possesses several skills. Among them are:* Master Strategist and Tactician* Master Martial Artist* Expert Pilot* Telepathic
+        Resistance"</string>
     <string name="Cyclops_height">6ft 3in</string>
     <string name="Cyclops_weight">195 lbs</string>
     <string name="Cyclops_powers">
@@ -219,16 +221,16 @@
     <string name="Dead_Pool_group"></string>
     <string name="Dead_Pool_origin"></string>
 
-    <!--Black panther-->
+    <!--Beast-->
 
-    <!--<string name="Captain_America_identity"></string>-->
-    <!--<string name="Captain_America_abilities"></string>-->
-    <!--<string name="Captain_America_height"></string>-->
-    <!--<string name="Captain_America_weight"></string>-->
-    <!--<string name="Captain_America_powers"></string>-->
-    <!--<string name="Captain_America_summary"></string>-->
-    <!--<string name="Captain_America_group"></string>-->
-    <!--<string name="Captain_America_origin"></string>-->
+    <!--<string name="Beast_identity"></string>-->
+    <!--<string name="Beast_abilities"></string>-->
+    <!--<string name="Beast_height"></string>-->
+    <!--<string name="Beast_weight"></string>-->
+    <!--<string name="Beast_powers"></string>-->
+    <!--<string name="Beast_summary"></string>-->
+    <!--<string name="Beast_group"></string>-->
+    <!--<string name="Beast_origin"></string>-->
 
 
     <!--Black panther-->
