@@ -1,4 +1,4 @@
-package com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase;
+package com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters;
 
 /**
  * Created by RedDragon on 12/17/16.

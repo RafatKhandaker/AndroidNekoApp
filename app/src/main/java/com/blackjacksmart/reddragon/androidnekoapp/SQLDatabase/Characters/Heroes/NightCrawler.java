@@ -1,13 +1,13 @@
-package com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters;
+package com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes;
 
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Hero;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Hero;
 
 /**
  * Created by RedDragon on 12/22/16.
  */
 
-public class JeanGrey extends Hero {
-    public JeanGrey() {
+public class NightCrawler extends Hero {
+    public NightCrawler() {
     }
     @Override
     public int getHeroId() {
@@ -54,4 +54,5 @@ public class JeanGrey extends Hero {
     public String getOrigin() {
         return "";
     }
+
 }
