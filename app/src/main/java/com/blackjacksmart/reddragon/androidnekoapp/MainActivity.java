@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -17,12 +18,18 @@ import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.Notification.NotificationReceiver;
 import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.DatabaseHelper;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.HeroDB;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.ButterKnife;
+import nl.qbusict.cupboard.QueryResultIterable;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.checkCharacterUnlocked;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.generateRandomNumList;
+import static nl.qbusict.cupboard.CupboardFactory.cupboard;
 
 /**##############################################################################################**/
 /***   PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
@@ -34,15 +41,17 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
  *                                                               Last Modified:      12-06-16    **/
 /**----------------------------------------------------------------------------------------------**/
 
-/**   NOT QUITE FINISHED !  I HAVE A LOT MORE iDEAS WITH THIS APP, WILL CONTINUE**/
+/**   NOT QUITE FINISHED !  I HAVE A LOT MORE IDEAS WITH THIS APP, WILL CONTINUE**/
 
 public class MainActivity extends AppCompatActivity {
 
 public static GridView gridView;
+public static List<HeroDB> HERO_DB_LIST = new ArrayList<>();
 
 private static int positionClicked;
 private SQLiteDatabase database;
 
+List<Integer> saveRandomNumbers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,20 +59,33 @@ private SQLiteDatabase database;
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        gridView = (GridView) findViewById(R.id.gridview);
+//        database = instantiateDataBase();
 
-        gridView = (GridView)findViewById(R.id.gridview);
-        database = instantiateDataBase();
+        DatabaseHelper dataBaseHelper = DatabaseHelper.getInstance(this);
+        SQLiteDatabase database = dataBaseHelper.getWritableDatabase();
+
+
+        if(RANDOM_LIST.size() == 0) {
+
+            RANDOM_LIST = generateRandomNumList();
+            saveRandomNumbers = RANDOM_LIST;
+//            addHeroDB(new HeroDB( 1 ,1 ,false));
+        }
 
         RANDOM_LIST = generateRandomNumList();
+        HERO_DB_LIST = loadDataBase(database);
 
-        System.out.println(RANDOM_LIST);
+//        System.out.println(HERO_DB_LIST.get(0).getSaveRandomNumbers());
 
-        initiateNotificationTimer();
+            initiateNotificationTimer();
+
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+
         initiateGridView();
     }
 //-----------------------------------Retrieve/Set Variable------------------------------------------
@@ -112,7 +134,8 @@ private SQLiteDatabase database;
 
     }
 
-//-------------------------------------Instantiate Database------------------------------------------
+//----------------------------------------Database--------------------------------------------------
+
     private SQLiteDatabase instantiateDataBase(){
 
         DatabaseHelper dataBaseHelper = DatabaseHelper.getInstance(this);
@@ -121,5 +144,33 @@ private SQLiteDatabase database;
 
 
     }
+
+    private List<HeroDB> loadDataBase(SQLiteDatabase database) {
+        try {
+            QueryResultIterable<HeroDB> iterable = cupboard()
+                    .withDatabase(database)
+                    .query(HeroDB.class)
+                    .query();
+
+            for (HeroDB heroDB : iterable) {
+                HERO_DB_LIST.add(heroDB);
+            }
+        } catch (Exception e) {
+            Log.i("loadDataBase", "Stacktrace: " + e);
+        }
+
+        return HERO_DB_LIST;
+    }
+
+     private void addHeroDB(HeroDB heroDB){
+
+        cupboard()
+                .withDatabase(database)
+                .put(heroDB);
+
+    }
+
+
+//onResume(); ** attempt to update gridview when hero is added to database, may be negligible in this app
 
 }

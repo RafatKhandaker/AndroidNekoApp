@@ -4,35 +4,35 @@ import android.content.Context;
 import android.widget.Toast;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Beast;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.BlackPanther;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.CaptainAmerica;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.CaptainMarvel;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Carnage;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Cyclops;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Deadpool;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Gambit;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Hulk;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.HumanTorch;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.IceMan;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.IronMan;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.JeanGrey;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Jubilee;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Mystique;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.NightCrawler;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Psylocke;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Rogue;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.ShadowCat;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.SilverSurfer;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.SpiderMan;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Steel;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Storm;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Thor;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Venom;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.WarMachine;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Wolverine;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Xavier;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Hero;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Beast;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.BlackPanther;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.CaptainAmerica;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.CaptainMarvel;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Carnage;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Cyclops;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Deadpool;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Gambit;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Hulk;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.HumanTorch;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.IceMan;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.IronMan;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.JeanGrey;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Jubilee;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Mystique;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.NightCrawler;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Psylocke;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Rogue;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.ShadowCat;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.SilverSurfer;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.SpiderMan;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Steel;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Storm;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Thor;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Venom;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.WarMachine;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Wolverine;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Heroes.Xavier;
+import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters.Hero;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,8 +46,7 @@ public class Controller {
 
     public static boolean GRID_LOOP = false;
 
-    private static int checkVal;
-    public static ArrayList<Integer> RANDOM_LIST = new ArrayList<Integer>(28);
+    public static List<Integer> RANDOM_LIST = new ArrayList<>(28);
 
     public static int FRAGMENT_VALUE;
     public static final int GRID_TRIGGER = 1;
@@ -84,36 +83,36 @@ public class Controller {
      private static final Wolverine Wolverine = new Wolverine();
      private static final Xavier Xavier = new Xavier();
 
-    static{
-        heroList.add(Beast);
-        heroList.add(BlackPanther);
-        heroList.add(CaptainAmerica);
-        heroList.add(CaptainMarvel);
-        heroList.add(Carnage);
-        heroList.add(Cyclops);
-        heroList.add(Deadpool);
-        heroList.add(Gambit);
-        heroList.add(Hulk);
-        heroList.add(HumanTorch);
-        heroList.add(IceMan);
-        heroList.add(IronMan);
-        heroList.add(JeanGrey);
-        heroList.add(Jubilee);
-        heroList.add(ShadowCat);
-        heroList.add(Mystique);
-        heroList.add(NightCrawler);
-        heroList.add(Xavier);
-        heroList.add(Psylocke);
-        heroList.add(Rogue);
-        heroList.add(SilverSurfer);
-        heroList.add(SpiderMan);
-        heroList.add(Steel);
-        heroList.add(Storm);
-        heroList.add(Thor);
-        heroList.add(Venom);
-        heroList.add(WarMachine);
-        heroList.add(Wolverine);
-    }
+//    static{
+//        heroList.add(Beast);
+//        heroList.add(BlackPanther);
+//        heroList.add(CaptainAmerica);
+//        heroList.add(CaptainMarvel);
+//        heroList.add(Carnage);
+//        heroList.add(Cyclops);
+//        heroList.add(Deadpool);
+//        heroList.add(Gambit);
+//        heroList.add(Hulk);
+//        heroList.add(HumanTorch);
+//        heroList.add(IceMan);
+//        heroList.add(IronMan);
+//        heroList.add(JeanGrey);
+//        heroList.add(Jubilee);
+//        heroList.add(ShadowCat);
+//        heroList.add(Mystique);
+//        heroList.add(NightCrawler);
+//        heroList.add(Xavier);
+//        heroList.add(Psylocke);
+//        heroList.add(Rogue);
+//        heroList.add(SilverSurfer);
+//        heroList.add(SpiderMan);
+//        heroList.add(Steel);
+//        heroList.add(Storm);
+//        heroList.add(Thor);
+//        heroList.add(Venom);
+//        heroList.add(WarMachine);
+//        heroList.add(Wolverine);
+//    }
 
 
 
@@ -218,8 +217,8 @@ public class Controller {
     };
 
 
-    public static ArrayList<Integer> generateRandomNumList(){
-        ArrayList <Integer> randomList = new ArrayList<>();
+    public static List<Integer> generateRandomNumList(){
+        List<Integer> randomList = new ArrayList<>(28);
         for(int i = 0; i < 28; i++){
             randomList.add(i);
         }

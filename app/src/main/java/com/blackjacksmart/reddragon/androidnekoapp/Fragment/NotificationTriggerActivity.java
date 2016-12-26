@@ -56,9 +56,11 @@ public class NotificationTriggerActivity extends AppCompatActivity {
 
         iconDefault[i] = icons[i];
         DEFAULT_CHAR_VALUE[i] = ARRAY_CHARACTERS[i];
+
         adapter.notifyDataSetChanged();
 
         gridView.invalidate();
 
     }
+
 }
