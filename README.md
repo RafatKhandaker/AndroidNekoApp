@@ -1,4 +1,4 @@
-Marvel Collection App
+#Marvel Collection App
 
 This application was written to mimic the android Neko application, In which a cat would be added to the SQL lite database
 for every notification recieved on the device. The notification listener was used, along with data stored within SQL lite using 
