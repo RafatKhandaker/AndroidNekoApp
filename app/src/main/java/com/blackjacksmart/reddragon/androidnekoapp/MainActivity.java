@@ -52,6 +52,7 @@ private static int positionClicked;
 
     Cursor res;
     StringBuffer bufferValue;
+    Thread thread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,9 +66,7 @@ private static int positionClicked;
         if(savedInstanceState == null){ RANDOM_LIST = generateRandomNumList(); }
 
         loadSavedData();
-
         initiateNotificationTimer();
-
     }
 
     @Override
@@ -120,8 +119,7 @@ private static int positionClicked;
     }
 //------------------------------------Notification Methods------------------------------------------
 
-    public void initiateNotificationTimer(){
-
+    private void instantiateNotification(){
         Intent intent = new Intent(getApplicationContext(), NotificationReceiver.class);
         final PendingIntent pendingIntent = PendingIntent.getBroadcast(this,
                 NotificationReceiver.REQUEST_CODE, intent, PendingIntent.FLAG_UPDATE_CURRENT);
@@ -133,8 +131,18 @@ private static int positionClicked;
 
     }
 
-//----------------------------------------Database--------------------------------------------------
+    private void initiateNotificationTimer(){
+        thread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                instantiateNotification();
+            }
+        });
 
+        thread.start();
+    }
+
+//----------------------------------------Database--------------------------------------------------
 
     private void loadSavedData(){
         res = dataBaseHelper.getAllData();

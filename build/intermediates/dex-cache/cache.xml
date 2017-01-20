@@ -151,17 +151,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="90115c018f4298519e4b2d8a3a1ace1b7a17a626">
+        sha1="7ad187c20f46ec85476c1ac99118b79c1165342d">
         <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d172b61b4fa0dc5f3e051a12aa1b851498f5b100/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.1_721574114b45c16e93205184f6ee03a7aca4dec2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -171,6 +162,15 @@
         revision="25.0.1"
         sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
         <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_62f73414b72e65c1570da28745d82eb09590b1c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.1_721574114b45c16e93205184f6ee03a7aca4dec2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -196,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c656a6a78f9408df8761ade5f964e6ffdbe3585b">
+        sha1="860773d46883e0c156f8ed42bba2cbee2496e5de">
         <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_02dea43949f27fdc099285736f67ff79dc032922/classes.dex" />
     </item>
     <item

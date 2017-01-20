@@ -37,9 +37,8 @@ public class NotificationService extends IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-
+        if(RANDOM_LIST.size() == 0){ return; }
         initiateNotificationService(intent);
-
     }
 
 //------------------------------NOTIFICATION METHOD-------------------------------------------------
@@ -47,17 +46,15 @@ public class NotificationService extends IntentService {
     public void initiateNotificationService(Intent intent){
 
         GRID_LOOP = true;
-
         int NOTIFICATION_ID = 555;
 
         intent = new Intent(this, NotificationTriggerActivity.class);
 
         int requestID = (int) System.currentTimeMillis();
         int flags = PendingIntent.FLAG_CANCEL_CURRENT;
+
         PendingIntent pendingIntent = PendingIntent.getActivity(this, requestID, intent, flags);
-
         Drawable drawable= ContextCompat.getDrawable(this,icons[RANDOM_LIST.get(0)]);
-
         Bitmap bitmap = ((BitmapDrawable)drawable).getBitmap();
 
         Notification notification = new NotificationCompat.Builder(this)
