@@ -4,10 +4,9 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -18,24 +17,24 @@ import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.Notification.NotificationReceiver;
 import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.DatabaseHelper;
-import com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.HeroDB;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import butterknife.ButterKnife;
-import nl.qbusict.cupboard.QueryResultIterable;
 
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.ARRAY_CHARACTERS;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.DEFAULT_CHAR_VALUE;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.checkCharacterUnlocked;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.generateRandomNumList;
-import static nl.qbusict.cupboard.CupboardFactory.cupboard;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.unlockRandomCharacter;
 
 /**##############################################################################################**/
 /***   PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
  **                                SQL DATABASE WITH RECYCLER                                     **
  **###############################################################################################**
- *                                                 Created by : Rafat Khandaker & Mina Meltem
+ *                                                 Created by : Rafat Khandaker
+ *
  *                                                                started:           12-06-16
  *                                                                Version:                1.0
  *                                                               Last Modified:      12-06-16    **/
@@ -46,12 +45,12 @@ import static nl.qbusict.cupboard.CupboardFactory.cupboard;
 public class MainActivity extends AppCompatActivity {
 
 public static GridView gridView;
-public static List<HeroDB> HERO_DB_LIST = new ArrayList<>();
 
 private static int positionClicked;
-private SQLiteDatabase database;
 
-List<Integer> saveRandomNumbers;
+    public static DatabaseHelper dataBaseHelper;
+    Cursor res;
+    StringBuffer bufferValue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,25 +59,14 @@ List<Integer> saveRandomNumbers;
         ButterKnife.bind(this);
 
         gridView = (GridView) findViewById(R.id.gridview);
-//        database = instantiateDataBase();
+        dataBaseHelper = new DatabaseHelper(this);
 
-        DatabaseHelper dataBaseHelper = DatabaseHelper.getInstance(this);
-        SQLiteDatabase database = dataBaseHelper.getWritableDatabase();
+        if(savedInstanceState == null){ RANDOM_LIST = generateRandomNumList(); }
+
+        loadSavedData();
 
 
-        if(RANDOM_LIST.size() == 0) {
-
-            RANDOM_LIST = generateRandomNumList();
-            saveRandomNumbers = RANDOM_LIST;
-//            addHeroDB(new HeroDB( 1 ,1 ,false));
-        }
-
-        RANDOM_LIST = generateRandomNumList();
-        HERO_DB_LIST = loadDataBase(database);
-
-//        System.out.println(HERO_DB_LIST.get(0).getSaveRandomNumbers());
-
-            initiateNotificationTimer();
+        initiateNotificationTimer();
 
     }
 
@@ -88,6 +76,19 @@ List<Integer> saveRandomNumbers;
 
         initiateGridView();
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putIntegerArrayList("Rand_List", RANDOM_LIST);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        RANDOM_LIST = savedInstanceState.getIntegerArrayList("Rand_List");
+    }
+
 //-----------------------------------Retrieve/Set Variable------------------------------------------
 
     public static int getPositionClicked(){ return positionClicked; }
@@ -136,41 +137,23 @@ List<Integer> saveRandomNumbers;
 
 //----------------------------------------Database--------------------------------------------------
 
-    private SQLiteDatabase instantiateDataBase(){
 
-        DatabaseHelper dataBaseHelper = DatabaseHelper.getInstance(this);
-        SQLiteDatabase database = dataBaseHelper.getWritableDatabase();
-        return database;
+    private void loadSavedData(){
+        res = dataBaseHelper.getAllData();
+        if(res.getCount() != 0) {
+            bufferValue = new StringBuffer();
+            while (res.moveToNext()) {
+                unlockRandomCharacter(Integer.valueOf(res.getString(3)));
+                bufferValue.append(res.getString(3));
+                RANDOM_LIST.remove(Integer.valueOf(res.getString(3)));
 
+                iconDefault[Integer.valueOf(res.getString(3))]
+                        = icons[Integer.valueOf(res.getString(3))];
 
-    }
-
-    private List<HeroDB> loadDataBase(SQLiteDatabase database) {
-        try {
-            QueryResultIterable<HeroDB> iterable = cupboard()
-                    .withDatabase(database)
-                    .query(HeroDB.class)
-                    .query();
-
-            for (HeroDB heroDB : iterable) {
-                HERO_DB_LIST.add(heroDB);
+                DEFAULT_CHAR_VALUE[Integer.valueOf(res.getString(3))]
+                        = ARRAY_CHARACTERS[Integer.valueOf(res.getString(3))];
             }
-        } catch (Exception e) {
-            Log.i("loadDataBase", "Stacktrace: " + e);
         }
-
-        return HERO_DB_LIST;
     }
-
-     private void addHeroDB(HeroDB heroDB){
-
-        cupboard()
-                .withDatabase(database)
-                .put(heroDB);
-
-    }
-
-
-//onResume(); ** attempt to update gridview when hero is added to database, may be negligible in this app
 
 }

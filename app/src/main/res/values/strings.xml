@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AndroidNekoApp</string>
+    <string name="app_name">Marvel Collections</string>
     <string name="public_key">de0a013fa5fde93d63827ada6a7d9b3e</string>
     <string name="private_key">9f00aa0a68664725781b821980a1b28c87388a86</string>
 </resources>

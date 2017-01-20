@@ -46,7 +46,7 @@ public class Controller {
 
     public static boolean GRID_LOOP = false;
 
-    public static List<Integer> RANDOM_LIST = new ArrayList<>(28);
+    public static ArrayList<Integer> RANDOM_LIST = new ArrayList<>(28);
 
     public static int FRAGMENT_VALUE;
     public static final int GRID_TRIGGER = 1;
@@ -217,8 +217,8 @@ public class Controller {
     };
 
 
-    public static List<Integer> generateRandomNumList(){
-        List<Integer> randomList = new ArrayList<>(28);
+    public static ArrayList<Integer> generateRandomNumList(){
+        ArrayList<Integer> randomList = new ArrayList<>(28);
         for(int i = 0; i < 28; i++){
             randomList.add(i);
         }

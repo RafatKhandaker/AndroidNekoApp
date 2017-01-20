@@ -3,66 +3,39 @@
 
     <item
         is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_0c7bbb4d0551ed9a3881f46e0a7f56793ca47b7b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_af0f1f5c8ebddc427f3df40d90a061858279b8b4/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-transition-25.0.1_d7c27a41c38e47174f74b951b65e17c43c2cd665/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_a8e4489788a2eb274c37c76f46b3e9c82a98bcf0/classes.dex" />
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-25.0.1_2c3e09e9d8004b640fdad66a88df6118cfdfa73b/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_d8f97781d91e375cc560a1c24deb4e129a525c9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_baa5cbcc5d4b2215638a5ab6efb2679f66546ea2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_20334d55602aec1cf5a8551657a4a6262268d166/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_fa5bffc5958484043ad955dffbd5f8bff88fad54/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_d35b26f31e27ea61ffb33b25974aee5961daca42/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_778bcfc615fdeb187328f77eb9ba83eb79f46520/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -71,133 +44,124 @@
         optimize="true"
         revision="25.0.1"
         sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_c385f16d9283c2a1819af12a072f9a7decfe7730/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.0.1_c385f16d9283c2a1819af12a072f9a7decfe7730/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.jakewharton/butterknife/8.4.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.1_00049dcb27a5e741da790dab4175bff03c10f6bc/classes.dex" />
+        sha1="a07818a1ecabdb149998823429cce555af4b9cba">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jakewharton-butterknife-8.4.0_0e4be3a0d3253ed0c4fe1118c6dcdc5f1411332c/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_d24c0c24462641b62f7916a7092168c94e542d6e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_480eee181abc27eaf5d41806db18041bba673bcb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f83b00041ecfba705603fec40363416c7de69719">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_e280298496b4fb61e1b82c8ca604996dba38026b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="91c6b8d3e7a79838a3aab360bf40211d84cab905">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c198e155309aaed05055d0d609189178d7aea377/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="8420c546eb65763949768258250fd2b2428cdcd3">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_a07de893a76b8c738b6c35ab01b6cee1df806eab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_7a28a370d6e13d66baeb3b30d6ba568e7967c174/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_cd523c94d2e565d7562391e10f9dea76ad439f9f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_15cc4e85474b092a0354e2dbaacd8717014a2ad9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_8c1b1765c89c980ae5e366d6ae7dc35b43bdf3b4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_dfb61ef91cdc468c95f1c3442468a8e5372ad5b9/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_b92b3554ebb75d8525d91fbc1c7b62d1c1780689/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_ece5d109bd167474b6e46c41a5caf61724ebed01/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-25.0.1_cc50c42b4182149e22822300f581a05a02680058/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-25.0.1_8ee4f97e605fb368b8e1107964ed04d14da5a941/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.0.1_c9ddb66e941ff518db371806517d35817b527cbe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-25.0.1_cfa7166d9df51e2e9c845ffbe478efaff04e45e5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-25.0.1_93a524e9f1864a3ecef70a6bc5989eb8853d5e3a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_e2e949f3159ced42b627f2d57a7c4a0e8a713434/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_f2e0b3ecc3e513bc4d9e14aab3992a3aae351920/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-25.0.1_f2860113018e721466ed17adaa74f5cd1ce9d0ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_9ac7e78fe3374e52ea2da30685fe9907ca72047a/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-25.0.1_c6462bc1f5bfa2985937045f38407574d14bf804/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-25.0.1_0da9119c993ff49ce3e2bb9dd310be63b0adf20d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="90115c018f4298519e4b2d8a3a1ace1b7a17a626">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d172b61b4fa0dc5f3e051a12aa1b851498f5b100/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-25.0.1_721574114b45c16e93205184f6ee03a7aca4dec2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -206,7 +170,7 @@
         optimize="true"
         revision="25.0.1"
         sha1="ea392375cf9ff59234a82e7928a204215ccc98cd">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_62f73414b72e65c1570da28745d82eb09590b1c7/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/butterknife-annotations-8.4.0_62f73414b72e65c1570da28745d82eb09590b1c7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -215,7 +179,43 @@
         optimize="true"
         revision="25.0.1"
         sha1="ba5bc66fad1fc20aeb8a74f0013b04185fd9a3a9">
-        <dex dex="/Users/RedDragon/Desktop/localAppTest/oldPro/MarvelCollectionApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/cupboard-2.1.4_1e2906777258800b00ad8097afc633915e8396ae/classes.dex" />
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/cupboard-2.1.4_1e2906777258800b00ad8097afc633915e8396ae/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-25.0.1_87f69deaae64ca05137ac4148f6de2af3a3c74a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c656a6a78f9408df8761ade5f964e6ffdbe3585b">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_02dea43949f27fdc099285736f67ff79dc032922/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-25.0.1_57b82b682bfb5a7c34aff30eeffeb591328ddcc2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.0.1_ac22e49af165704b9da7980f395e7e34c766b691/classes.dex" />
     </item>
 
 </items>

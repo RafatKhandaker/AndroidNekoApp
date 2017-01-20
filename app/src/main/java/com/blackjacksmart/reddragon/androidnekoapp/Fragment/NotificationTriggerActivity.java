@@ -3,6 +3,7 @@ package com.blackjacksmart.reddragon.androidnekoapp.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.blackjacksmart.reddragon.androidnekoapp.GridView.GridAdapter;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
@@ -13,6 +14,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.icons;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.unlockRandomCharacter;
+import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.dataBaseHelper;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.gridView;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.setPositionClicked;
 
@@ -21,8 +23,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.setPositi
  */
 
 public class NotificationTriggerActivity extends AppCompatActivity {
-
-    GridAdapter adapter;
+    private GridAdapter adapter;
     private int i;
 
     @Override
@@ -47,10 +48,17 @@ public class NotificationTriggerActivity extends AppCompatActivity {
 
     private void unlockCharacter(){
 
+        String hero = ARRAY_CHARACTERS[i];
         i = RANDOM_LIST.get(0);
 
             setPositionClicked(i);
             unlockRandomCharacter(i);
+
+        Boolean isInserted = dataBaseHelper.insertData(hero, String.valueOf(1), String.valueOf(i));
+        if(isInserted == true)
+        {Toast.makeText(this,"Data Inserted",Toast.LENGTH_LONG).show();}
+        else
+        {Toast.makeText(this,"Data not Inserted",Toast.LENGTH_LONG).show();}
 
             RANDOM_LIST.remove(0);
 
