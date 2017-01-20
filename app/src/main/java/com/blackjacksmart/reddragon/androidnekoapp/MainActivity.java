@@ -49,6 +49,7 @@ public static GridView gridView;
 private static int positionClicked;
 
     public static DatabaseHelper dataBaseHelper;
+
     Cursor res;
     StringBuffer bufferValue;
 
@@ -65,7 +66,6 @@ private static int positionClicked;
 
         loadSavedData();
 
-
         initiateNotificationTimer();
 
     }
@@ -73,7 +73,6 @@ private static int positionClicked;
     @Override
     protected void onResume() {
         super.onResume();
-
         initiateGridView();
     }
 
@@ -129,7 +128,6 @@ private static int positionClicked;
 
         long firstMillis = System.currentTimeMillis();
 
-        // Change value to 60000L for presentation
         AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis, 60000L, pendingIntent);
 

@@ -47,26 +47,23 @@ public class NotificationTriggerActivity extends AppCompatActivity {
     }
 
     private void unlockCharacter(){
-
         String hero = ARRAY_CHARACTERS[i];
         i = RANDOM_LIST.get(0);
-
             setPositionClicked(i);
             unlockRandomCharacter(i);
-
         Boolean isInserted = dataBaseHelper.insertData(hero, String.valueOf(1), String.valueOf(i));
-        if(isInserted == true)
-        {Toast.makeText(this,"Data Inserted",Toast.LENGTH_LONG).show();}
-        else
-        {Toast.makeText(this,"Data not Inserted",Toast.LENGTH_LONG).show();}
 
-            RANDOM_LIST.remove(0);
+        if(isInserted)
+            {Toast.makeText(this,"Data Inserted",Toast.LENGTH_LONG).show();}
+        else
+            {Toast.makeText(this,"Data not Inserted",Toast.LENGTH_LONG).show();}
+
+        RANDOM_LIST.remove(0);
 
         iconDefault[i] = icons[i];
         DEFAULT_CHAR_VALUE[i] = ARRAY_CHARACTERS[i];
 
         adapter.notifyDataSetChanged();
-
         gridView.invalidate();
 
     }

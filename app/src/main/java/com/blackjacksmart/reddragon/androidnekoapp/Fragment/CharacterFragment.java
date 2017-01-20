@@ -59,7 +59,6 @@ public class CharacterFragment extends Fragment {
     }
 
     private void loadFragmentView(){
-
         collapsingToolbar.setTitle(ARRAY_CHARACTERS[getPositionClicked()]);
         collapsingToolbar.setCollapsedTitleTextColor(Color.parseColor("#000000"));
         appBarLayout.setExpanded(true);
@@ -73,8 +72,6 @@ public class CharacterFragment extends Fragment {
 //------------------------------------Toolbar Effect------------------------------------------------
 
     private void initCollapsingToolbar() {
-
-        // hiding & showing the title when toolbar expanded & collapsed
         appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             boolean isShow = false;
             double scrollRange = -1;

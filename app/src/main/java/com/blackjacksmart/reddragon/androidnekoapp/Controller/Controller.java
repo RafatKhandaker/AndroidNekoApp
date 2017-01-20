@@ -230,11 +230,6 @@ public class Controller {
         Toast.makeText(context,"" + ARRAY_CHARACTERS[n], Toast.LENGTH_SHORT).show();
     }
 
-
-    public boolean isCharacterUnlocked(int i){
-        return checkCharacterUnlocked[i];
-    }
-
     public static void unlockRandomCharacter(int checkValue){
         checkCharacterUnlocked[checkValue] = true;
     }

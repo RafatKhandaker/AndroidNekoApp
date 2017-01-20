@@ -6,8 +6,6 @@ package com.blackjacksmart.reddragon.androidnekoapp.SQLDatabase.Characters;
 
 public class Hero {
 
-
-
     protected int id;
     private String character;
     private String identity;
@@ -37,7 +35,6 @@ public class Hero {
         this.origin = origin;
 
     }
-
 
     public int getHeroId(){ return id; }
 

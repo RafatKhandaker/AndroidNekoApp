@@ -19,7 +19,6 @@ public class FragmentActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_container);
-
         FRAGMENT_VALUE = GRID_TRIGGER;
         launchCharacterFragment();
     }

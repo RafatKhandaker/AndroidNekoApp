@@ -42,7 +42,6 @@ public class NotificationService extends IntentService {
 
     }
 
-
 //------------------------------NOTIFICATION METHOD-------------------------------------------------
 
     public void initiateNotificationService(Intent intent){
