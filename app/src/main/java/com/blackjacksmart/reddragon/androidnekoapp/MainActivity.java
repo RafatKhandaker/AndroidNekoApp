@@ -54,7 +54,7 @@ private static int positionClicked;
 
     Cursor res;
     StringBuffer bufferValue;
-    Thread thread;
+    public static Thread thread;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
