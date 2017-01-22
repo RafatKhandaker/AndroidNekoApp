@@ -52,7 +52,7 @@ public class Controller {
     public static final int GRID_TRIGGER = 1;
     public static final int NOTIFICATION_TRIGGER = 0;
 
-    public static List<Hero> heroList;
+    public static List<Hero> heroList = new ArrayList<>(28);
 
      private static final Beast Beast = new Beast();
      private static final BlackPanther BlackPanther =  new BlackPanther();
@@ -83,36 +83,36 @@ public class Controller {
      private static final Wolverine Wolverine = new Wolverine();
      private static final Xavier Xavier = new Xavier();
 
-//    static{
-//        heroList.add(Beast);
-//        heroList.add(BlackPanther);
-//        heroList.add(CaptainAmerica);
-//        heroList.add(CaptainMarvel);
-//        heroList.add(Carnage);
-//        heroList.add(Cyclops);
-//        heroList.add(Deadpool);
-//        heroList.add(Gambit);
-//        heroList.add(Hulk);
-//        heroList.add(HumanTorch);
-//        heroList.add(IceMan);
-//        heroList.add(IronMan);
-//        heroList.add(JeanGrey);
-//        heroList.add(Jubilee);
-//        heroList.add(ShadowCat);
-//        heroList.add(Mystique);
-//        heroList.add(NightCrawler);
-//        heroList.add(Xavier);
-//        heroList.add(Psylocke);
-//        heroList.add(Rogue);
-//        heroList.add(SilverSurfer);
-//        heroList.add(SpiderMan);
-//        heroList.add(Steel);
-//        heroList.add(Storm);
-//        heroList.add(Thor);
-//        heroList.add(Venom);
-//        heroList.add(WarMachine);
-//        heroList.add(Wolverine);
-//    }
+    public static void addHeroList(){
+        heroList.add(Beast);
+        heroList.add(BlackPanther);
+        heroList.add(CaptainAmerica);
+        heroList.add(CaptainMarvel);
+        heroList.add(Carnage);
+        heroList.add(Cyclops);
+        heroList.add(Deadpool);
+        heroList.add(Gambit);
+        heroList.add(Hulk);
+        heroList.add(HumanTorch);
+        heroList.add(IceMan);
+        heroList.add(IronMan);
+        heroList.add(JeanGrey);
+        heroList.add(Jubilee);
+        heroList.add(ShadowCat);
+        heroList.add(Mystique);
+        heroList.add(NightCrawler);
+        heroList.add(Xavier);
+        heroList.add(Psylocke);
+        heroList.add(Rogue);
+        heroList.add(SilverSurfer);
+        heroList.add(SpiderMan);
+        heroList.add(Steel);
+        heroList.add(Storm);
+        heroList.add(Thor);
+        heroList.add(Venom);
+        heroList.add(WarMachine);
+        heroList.add(Wolverine);
+    }
 
 
 

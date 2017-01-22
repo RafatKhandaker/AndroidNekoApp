@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
@@ -21,6 +22,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.NOTIFICATION_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.charBackgroundImage;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.heroList;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
@@ -34,6 +36,15 @@ public class CharacterFragment extends Fragment {
 @Nullable @BindView(R.id.appbar) AppBarLayout appBarLayout;
 @Nullable @BindView(R.id.char_header_image_view) ImageView charHeaderImage;
 @Nullable @BindView(R.id.set_descript_icon) ImageView descriptImage;
+@Nullable @BindView(R.id.set_id_tv) TextView setID;
+@Nullable @BindView(R.id.set_ht_tv) TextView setHT;
+@Nullable @BindView(R.id.set_wt_tv) TextView setWT;
+@Nullable @BindView(R.id.set_origin_tv) TextView setOrigin;
+@Nullable @BindView(R.id.set_group_tv) TextView setGroup;
+@Nullable @BindView(R.id.set_abilities_tv) TextView setAbilities;
+@Nullable @BindView(R.id.set_summary_tv) TextView setSummary;
+
+
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,7 +78,14 @@ public class CharacterFragment extends Fragment {
         charHeaderImage.setImageResource(charBackgroundImage[getPositionClicked()]);
         charHeaderImage.setMaxHeight(500);
         charHeaderImage.setMaxWidth(100);
+
         descriptImage.setImageResource(iconDefault[getPositionClicked()]);
+        setID.setText(heroList.get(getPositionClicked()).getIdentity());
+        setHT.setText(heroList.get(getPositionClicked()).getHeight());
+        setGroup.setText(heroList.get(getPositionClicked()).getAbilities());
+        setOrigin.setText(heroList.get(getPositionClicked()).getOrigin());
+        setAbilities.setText(heroList.get(getPositionClicked()).getAbilities());
+        setSummary.setText(heroList.get(getPositionClicked()).getSummary());
 
         initCollapsingToolbar();
     }

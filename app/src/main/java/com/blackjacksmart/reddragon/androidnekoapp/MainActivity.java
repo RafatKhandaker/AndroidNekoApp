@@ -24,6 +24,7 @@ import butterknife.ButterKnife;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.ARRAY_CHARACTERS;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.DEFAULT_CHAR_VALUE;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.RANDOM_LIST;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.addHeroList;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.checkCharacterUnlocked;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.generateRandomNumList;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
@@ -63,6 +64,8 @@ private static int positionClicked;
 
         gridView = (GridView) findViewById(R.id.gridview);
         dataBaseHelper = new DatabaseHelper(this);
+
+        addHeroList();
 
         if(savedInstanceState == null){ RANDOM_LIST = generateRandomNumList(); }
 

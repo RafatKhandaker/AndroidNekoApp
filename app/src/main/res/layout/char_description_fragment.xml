@@ -166,8 +166,7 @@
         android:textSize="15dp"
         android:paddingTop="5dp"
         android:layout_below="@+id/set_origin_tv"
-        android:layout_marginLeft="170dp"
-        />
+        android:layout_marginLeft="170dp" />
 
     <TextView
         android:layout_height="wrap_content"
@@ -179,9 +178,18 @@
         android:textSize="15dp"
         android:paddingTop="5dp"
         android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
         android:layout_below="@+id/set_origin_tv"
         android:layout_toRightOf="@+id/group_tv"
         />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical"
+       android:paddingTop="5dp"
+       android:id="@+id/descript_ll_container"
+       android:layout_below="@+id/set_group_tv">
 
     <TextView
         android:layout_height="wrap_content"
@@ -191,25 +199,21 @@
         android:textStyle="bold"
         android:textColor="#000000"
         android:textSize="15dp"
-        android:paddingTop="5dp"
-        android:layout_below="@+id/set_descript_icon"
         android:paddingLeft="10dp"
         />
 
     <TextView
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:paddingRight="10dp"
         android:id="@+id/set_abilities_tv"
         android:text="............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................"
         android:textStyle="italic"
         android:textSize="15dp"
-        android:paddingTop="5dp"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:layout_below="@+id/set_descript_icon"
         android:layout_toRightOf="@+id/abilities_tv"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        />
+        android:scrollbars="vertical" />
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -224,7 +228,7 @@
         />
 
     <TextView
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:paddingRight="10dp"
         android:id="@+id/set_summary_tv"
@@ -232,12 +236,12 @@
         android:textStyle="italic"
         android:textSize="15dp"
         android:paddingTop="5dp"
-        android:paddingLeft="5dp"
+        android:paddingLeft="10dp"
         android:layout_below="@+id/set_abilities_tv"
         android:layout_toRightOf="@+id/summary_tv"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        />
+        android:scrollbars="vertical" />
 
+   </LinearLayout>
 
 </RelativeLayout>
 
