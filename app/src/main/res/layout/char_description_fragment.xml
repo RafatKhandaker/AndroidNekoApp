@@ -44,6 +44,15 @@
         </android.support.design.widget.CollapsingToolbarLayout>
 </android.support.design.widget.AppBarLayout>
 
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollview"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@+id/appbar"
+        android:fillViewport="true">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -52,6 +61,7 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:scrollbars="vertical"
         android:scrollbarStyle="outsideOverlay">
+
 
         <ImageView
             android:layout_height="145dp"
@@ -246,9 +256,9 @@
             android:layout_below="@+id/set_abilities_tv"
             android:layout_toRightOf="@+id/summary_tv"
             android:scrollbars="vertical" />
-
        </LinearLayout>
 
     </RelativeLayout>
+    </ScrollView>
 
 </android.support.design.widget.CoordinatorLayout>
