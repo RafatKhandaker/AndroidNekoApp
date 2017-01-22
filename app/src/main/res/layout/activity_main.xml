@@ -19,6 +19,7 @@
         android:verticalSpacing="10dp"
         android:horizontalSpacing="10dp"
         android:paddingRight="10dp"
+        android:transitionName="transition"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />

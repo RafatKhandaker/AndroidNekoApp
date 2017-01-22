@@ -31,28 +31,100 @@
                 app:layout_collapseMode="pin"
                 app:layout_scrollFlags="scroll|enterAlways" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:minWidth="200dp"
-                android:id="@+id/char_header_image_view"
-                android:minHeight="100dp"
-                android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax"
-                app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minWidth="200dp"
+                    android:id="@+id/char_header_image_view"
+                    android:minHeight="100dp"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+</android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/char_container"
+    android:layout_below="@+id/appbar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
- <RelativeLayout
-     android:id="@+id/char_description_container"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content">
+    <ImageView
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:id="@+id/set_descript_icon"
+        android:transitionName="transition"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/id_tv"
+        android:text="id: "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_marginLeft="170dp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/set_id_tv"
+        android:text="name"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@+id/id_tv"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/ht_tv"
+        android:text="ht: "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/id_tv"
+        android:layout_marginLeft="170dp"
+        />
 
-     <ImageView
-         android:layout_height="wrap_content"
-         android:layout_width="wrap_content"
-         android:id="@+id/set_descript_icon" />
- </RelativeLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/set_ht_tv"
+        android:text="height"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/set_id_tv"
+        android:layout_toRightOf="@+id/ht_tv"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/wt_tv"
+        android:text="wt: "
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/ht_tv"
+        android:layout_marginLeft="170dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/set_wt_tv"
+        android:text="weight"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/set_ht_tv"
+        android:layout_toRightOf="@+id/ht_tv"
+        />
+</RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

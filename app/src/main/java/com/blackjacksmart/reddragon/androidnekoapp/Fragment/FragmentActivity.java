@@ -23,7 +23,6 @@ public class FragmentActivity extends AppCompatActivity{
         launchCharacterFragment();
     }
 
-
     private void launchCharacterFragment(){
         android.app.FragmentManager fragmentManager = getFragmentManager();
         android.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.Toast;
+import android.support.v4.app.ActivityOptionsCompat;
 
 import com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller;
 import com.blackjacksmart.reddragon.androidnekoapp.Fragment.FragmentActivity;
@@ -98,7 +99,6 @@ private static int positionClicked;
         gridView.setAdapter(new GridAdapter(this));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 positionClicked = (i);
@@ -114,8 +114,11 @@ private static int positionClicked;
 //--------------------------------------Fragment Method---------------------------------------------
 
     private void launchFragmentActivity(Context context){
-        Intent intent = new Intent(context, FragmentActivity.class);
-        context.startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+        ActivityOptionsCompat optionsCompat = ActivityOptionsCompat
+                        .makeSceneTransitionAnimation(MainActivity.this,
+                                findViewById(R.id.gridview), "transition");
+        startActivity(intent, optionsCompat.toBundle());
     }
 //------------------------------------Notification Methods------------------------------------------
 
@@ -138,7 +141,6 @@ private static int positionClicked;
                 instantiateNotification();
             }
         });
-
         thread.start();
     }
 

@@ -21,6 +21,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.NOTIFICATION_TRIGGER;
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.charBackgroundImage;
+import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.iconDefault;
 import static com.blackjacksmart.reddragon.androidnekoapp.MainActivity.getPositionClicked;
 
 /**
@@ -31,7 +32,8 @@ public class CharacterFragment extends Fragment {
 
 @Nullable @BindView(R.id.collapsing_toolbar) CollapsingToolbarLayout collapsingToolbar;
 @Nullable @BindView(R.id.appbar) AppBarLayout appBarLayout;
-@Nullable @BindView (R.id.char_header_image_view) ImageView charHeaderImage;
+@Nullable @BindView(R.id.char_header_image_view) ImageView charHeaderImage;
+@Nullable @BindView(R.id.set_descript_icon) ImageView descriptImage;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -65,6 +67,7 @@ public class CharacterFragment extends Fragment {
         charHeaderImage.setImageResource(charBackgroundImage[getPositionClicked()]);
         charHeaderImage.setMaxHeight(500);
         charHeaderImage.setMaxWidth(100);
+        descriptImage.setImageResource(iconDefault[getPositionClicked()]);
 
         initCollapsingToolbar();
     }
