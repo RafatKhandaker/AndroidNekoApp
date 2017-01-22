@@ -82,6 +82,7 @@ public class CharacterFragment extends Fragment {
         descriptImage.setImageResource(iconDefault[getPositionClicked()]);
         setID.setText(heroList.get(getPositionClicked()).getIdentity());
         setHT.setText(heroList.get(getPositionClicked()).getHeight());
+        setWT.setText(heroList.get(getPositionClicked()).getWeight());
         setGroup.setText(heroList.get(getPositionClicked()).getAbilities());
         setOrigin.setText(heroList.get(getPositionClicked()).getOrigin());
         setAbilities.setText(heroList.get(getPositionClicked()).getAbilities());
