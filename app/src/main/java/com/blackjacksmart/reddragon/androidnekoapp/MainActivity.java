@@ -39,10 +39,8 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
  *
  *                                                                started:           12-06-16
  *                                                                Version:                1.0
- *                                                               Last Modified:      12-06-16    **/
+ *                                                               Last Modified:      Jan-22-16    **/
 /**----------------------------------------------------------------------------------------------**/
-
-/**   NOT QUITE FINISHED !  I HAVE A LOT MORE IDEAS WITH THIS APP, WILL CONTINUE**/
 
 public class MainActivity extends AppCompatActivity {
 
