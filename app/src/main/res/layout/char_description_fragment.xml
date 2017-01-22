@@ -56,11 +56,13 @@
         android:id="@+id/set_descript_icon"
         android:transitionName="transition"
         />
+
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:id="@+id/id_tv"
         android:text="id: "
+        android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="15dp"
         android:paddingTop="5dp"
@@ -82,6 +84,7 @@
         android:layout_width="wrap_content"
         android:id="@+id/ht_tv"
         android:text="ht: "
+        android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="15dp"
         android:paddingTop="5dp"
@@ -106,12 +109,13 @@
         android:layout_width="wrap_content"
         android:id="@+id/wt_tv"
         android:text="wt: "
+        android:textColor="#000000"
         android:textStyle="bold"
         android:textSize="15dp"
         android:paddingTop="5dp"
         android:layout_below="@+id/ht_tv"
         android:layout_marginLeft="170dp"
-        />
+    />
 
     <TextView
         android:layout_height="wrap_content"
@@ -125,6 +129,116 @@
         android:layout_below="@+id/set_ht_tv"
         android:layout_toRightOf="@+id/ht_tv"
         />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/origin_tv"
+        android:text="Origin: "
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/wt_tv"
+        android:layout_marginLeft="170dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="175dp"
+        android:id="@+id/set_origin_tv"
+        android:text="origin data........................................"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/set_wt_tv"
+        android:layout_toRightOf="@+id/origin_tv"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/group_tv"
+        android:text="Group: "
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/set_origin_tv"
+        android:layout_marginLeft="170dp"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:id="@+id/set_group_tv"
+        android:text=" group data "
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/set_origin_tv"
+        android:layout_toRightOf="@+id/group_tv"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/abilities_tv"
+        android:text="Abilities: "
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/set_descript_icon"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:id="@+id/set_abilities_tv"
+        android:text="............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/set_descript_icon"
+        android:layout_toRightOf="@+id/abilities_tv"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/summary_tv"
+        android:text="Summary: "
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/set_abilities_tv"
+        android:paddingLeft="10dp"
+        />
+
+    <TextView
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:paddingRight="10dp"
+        android:id="@+id/set_summary_tv"
+        android:text="............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................"
+        android:textStyle="italic"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/set_abilities_tv"
+        android:layout_toRightOf="@+id/summary_tv"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        />
+
+
 </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>
