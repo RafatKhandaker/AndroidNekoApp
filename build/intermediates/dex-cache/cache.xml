@@ -151,7 +151,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="09cc4096e7cf8f7cf872bab35f60b0756858b3ae">
+        sha1="1267ab213824440f6f24eb1c609d680fc0b80dcf">
         <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d172b61b4fa0dc5f3e051a12aa1b851498f5b100/classes.dex" />
     </item>
     <item
@@ -196,7 +196,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="468b4104ce2ede5643fd5d61027bc1f18141e5d1">
+        sha1="1e374580fcc931f633b6bfa0b2e13229dcea8d49">
         <dex dex="/Users/RedDragon/Desktop/Marvel-Collections_App/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_02dea43949f27fdc099285736f67ff79dc032922/classes.dex" />
     </item>
     <item

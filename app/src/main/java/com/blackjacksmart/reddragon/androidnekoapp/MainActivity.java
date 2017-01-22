@@ -32,7 +32,7 @@ import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.unlockRandomCharacter;
 
 /**##############################################################################################**/
-/***   PUZZLE APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
+/***   COLLECTION APP THAT WILL UPDATE A MODIFIABLE GRID VIEW AFTER COLLECTING PIECES EVERY 30 MIN   ***
  **                                SQL DATABASE WITH RECYCLER                                     **
  **###############################################################################################**
  *                                                 Created by : Rafat Khandaker
@@ -115,7 +115,7 @@ private static int positionClicked;
 //--------------------------------------Fragment Method---------------------------------------------
 
     private void launchFragmentActivity(Context context){
-        Intent intent = new Intent(MainActivity.this, FragmentActivity.class);
+        Intent intent = new Intent(context, FragmentActivity.class);
         ActivityOptionsCompat optionsCompat = ActivityOptionsCompat
                         .makeSceneTransitionAnimation(MainActivity.this,
                                 findViewById(R.id.gridview), "transition");

@@ -58,6 +58,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         sqLiteDatabase = this.getWritableDatabase();
         return sqLiteDatabase.rawQuery("select * from "+TABLE_NAME,null); }
 
+
+ //-----------------------keep methods for enhancements and reference ------------------------------
     public Cursor getValue(){
         sqLiteDatabase = this.getWritableDatabase();
         return sqLiteDatabase.rawQuery("select VALUE from "+TABLE_NAME, null); }

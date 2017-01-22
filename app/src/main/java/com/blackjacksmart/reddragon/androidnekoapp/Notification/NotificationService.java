@@ -12,7 +12,6 @@ import android.graphics.drawable.Drawable;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.content.ContextCompat;
 
-import com.blackjacksmart.reddragon.androidnekoapp.Fragment.NotificationTriggerActivity;
 import com.blackjacksmart.reddragon.androidnekoapp.R;
 
 import static com.blackjacksmart.reddragon.androidnekoapp.Controller.Controller.GRID_LOOP;
